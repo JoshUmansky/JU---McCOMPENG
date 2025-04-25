@@ -1,0 +1,14 @@
+Benchmark Name,,Instruction Count
+st-matmul,,238014
+st-vvad,,244195
+vvadd,,142018
+multiply,,163521
+memcpy,,221844
+qsort,,480859
+memBw,,27881864
+spmv,,234746
+mergesort,,396804
+towers,,143274
+rsort,,673284
+median,,154848
+memlatency,,22897838

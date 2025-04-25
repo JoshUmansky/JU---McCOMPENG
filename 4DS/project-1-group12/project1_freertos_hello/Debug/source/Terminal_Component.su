@@ -1,0 +1,7 @@
+../source/Terminal_Component.c:6:6:setupTerminalComponent	24	static
+../source/Terminal_Component.c:33:6:setupTerminalPins	4	static
+../source/Terminal_Component.c:38:6:sendMessage	16	static
+../source/Terminal_Component.c:56:6:setupUART	4	static
+../source/Terminal_Component.c:61:6:uartTask	40	static
+../source/Terminal_Component.c:82:6:UART4_RX_TX_IRQHandler	4	static
+../source/Terminal_Component.c:87:6:terminalControlTask	16	static

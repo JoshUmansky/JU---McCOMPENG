@@ -1,0 +1,5 @@
+mempool_size,num_requests,num_hits,num_misses,hit_rate
+4KB,2048,1984,64,0.96875
+8KB,4096,3968,128,0.96875
+16KB,8192,7680,512,0.9375
+32KB,16384,15360,1024,0.9375

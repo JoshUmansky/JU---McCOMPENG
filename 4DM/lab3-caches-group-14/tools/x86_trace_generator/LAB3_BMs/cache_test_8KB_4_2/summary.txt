@@ -1,0 +1,4 @@
+Execution time: 42532
+total number of requests: 4097
+total number of hits:     3965
+total number of misses:   132

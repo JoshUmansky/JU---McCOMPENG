@@ -1,0 +1,1365 @@
+1,582c6fef42a0,add2q_l,L1: The message is added to the processing queue from the core,0,2,cycle
+1,582c6fef42a0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+1,582c6fef42a0,MSIredy,L1: Protocol determines message is now ready to be processed,0,2,cycle
+1,582c6fef42a0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,2,cycle
+1,582c6fef42a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,2,cycle
+1,582c6fef42a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,3,cycle
+1,582c6fef42a0,add2q_u,L1 receives message from the bus,0,4,cycle
+1,582c6fef42a0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,4,cycle
+1,582c6fef42a0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+1,582c6fef42a0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,4,cycle
+1,582c6fef42a0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,4,cycle
+1,582c6fef42a0,add_req,LLC miss -> LLC sends request to DRAM,LLC,4,cycle
+1,582c6fef42a0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,261,cycle
+1,582c6fef42a0,respond,LLC sends response message to the requesting L1,LLC,261,cycle
+1,582c6fef42a0,updaDat,LLC updates its data array,LLC,261,cycle
+1,582c6fef42a0,wrCache,LLC: New data written to cache,LLC,261,cycle
+1,582c6fef42a0,respond,LLC sends response message to the requesting L1,LLC,262,cycle
+1,582c6fef42a0,add2q_u,L1 receives message from the bus,0,266,cycle
+1,582c6fef42a0,respond,L1 responds to core,0,266,cycle
+1,582c6fef42a0,updaDat,L1 attempts to update its data array,0,266,cycle
+1,582c6fef42a0,wrCache,L1: New data written to cache,0,266,cycle
+2,582c6fef42e0,add2q_l,L1: The message is added to the processing queue from the core,0,268,cycle
+2,582c6fef42e0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+2,582c6fef42e0,MSIredy,L1: Protocol determines message is now ready to be processed,0,268,cycle
+2,582c6fef42e0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,268,cycle
+2,582c6fef42e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,268,cycle
+2,582c6fef42e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,269,cycle
+2,582c6fef42e0,add2q_u,L1 receives message from the bus,0,270,cycle
+2,582c6fef42e0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,270,cycle
+2,582c6fef42e0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+2,582c6fef42e0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,270,cycle
+2,582c6fef42e0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,270,cycle
+2,582c6fef42e0,add_req,LLC miss -> LLC sends request to DRAM,LLC,270,cycle
+2,582c6fef42e0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,527,cycle
+2,582c6fef42e0,respond,LLC sends response message to the requesting L1,LLC,527,cycle
+2,582c6fef42e0,updaDat,LLC updates its data array,LLC,527,cycle
+2,582c6fef42e0,wrCache,LLC: New data written to cache,LLC,527,cycle
+2,582c6fef42e0,respond,LLC sends response message to the requesting L1,LLC,528,cycle
+2,582c6fef42e0,add2q_u,L1 receives message from the bus,0,532,cycle
+2,582c6fef42e0,respond,L1 responds to core,0,532,cycle
+2,582c6fef42e0,updaDat,L1 attempts to update its data array,0,532,cycle
+2,582c6fef42e0,wrCache,L1: New data written to cache,0,532,cycle
+3,582c6fef4320,add2q_l,L1: The message is added to the processing queue from the core,0,534,cycle
+3,582c6fef4320,Miss?  ,L1: Was the request a miss?,0,1,boolean
+3,582c6fef4320,MSIredy,L1: Protocol determines message is now ready to be processed,0,534,cycle
+3,582c6fef4320,msgProc,L1: message is taken from the L1's processing queue to be processed,0,534,cycle
+3,582c6fef4320,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,534,cycle
+3,582c6fef4320,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,535,cycle
+3,582c6fef4320,add2q_u,L1 receives message from the bus,0,536,cycle
+3,582c6fef4320,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,536,cycle
+3,582c6fef4320,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+3,582c6fef4320,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,536,cycle
+3,582c6fef4320,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,536,cycle
+3,582c6fef4320,add_req,LLC miss -> LLC sends request to DRAM,LLC,536,cycle
+3,582c6fef4320,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,793,cycle
+3,582c6fef4320,respond,LLC sends response message to the requesting L1,LLC,793,cycle
+3,582c6fef4320,updaDat,LLC updates its data array,LLC,793,cycle
+3,582c6fef4320,wrCache,LLC: New data written to cache,LLC,793,cycle
+3,582c6fef4320,respond,LLC sends response message to the requesting L1,LLC,794,cycle
+3,582c6fef4320,add2q_u,L1 receives message from the bus,0,798,cycle
+3,582c6fef4320,respond,L1 responds to core,0,798,cycle
+3,582c6fef4320,updaDat,L1 attempts to update its data array,0,798,cycle
+3,582c6fef4320,wrCache,L1: New data written to cache,0,798,cycle
+4,582c6fef4360,add2q_l,L1: The message is added to the processing queue from the core,0,800,cycle
+4,582c6fef4360,Miss?  ,L1: Was the request a miss?,0,1,boolean
+4,582c6fef4360,MSIredy,L1: Protocol determines message is now ready to be processed,0,800,cycle
+4,582c6fef4360,msgProc,L1: message is taken from the L1's processing queue to be processed,0,800,cycle
+4,582c6fef4360,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,800,cycle
+4,582c6fef4360,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,801,cycle
+4,582c6fef4360,add2q_u,L1 receives message from the bus,0,802,cycle
+4,582c6fef4360,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,802,cycle
+4,582c6fef4360,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+4,582c6fef4360,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,802,cycle
+4,582c6fef4360,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,802,cycle
+4,582c6fef4360,add_req,LLC miss -> LLC sends request to DRAM,LLC,802,cycle
+4,582c6fef4360,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,1059,cycle
+4,582c6fef4360,respond,LLC sends response message to the requesting L1,LLC,1059,cycle
+4,582c6fef4360,updaDat,LLC updates its data array,LLC,1059,cycle
+4,582c6fef4360,wrCache,LLC: New data written to cache,LLC,1059,cycle
+4,582c6fef4360,respond,LLC sends response message to the requesting L1,LLC,1060,cycle
+4,582c6fef4360,add2q_u,L1 receives message from the bus,0,1064,cycle
+4,582c6fef4360,respond,L1 responds to core,0,1064,cycle
+4,582c6fef4360,updaDat,L1 attempts to update its data array,0,1064,cycle
+4,582c6fef4360,wrCache,L1: New data written to cache,0,1064,cycle
+5,582c6fef43a0,add2q_l,L1: The message is added to the processing queue from the core,0,1066,cycle
+5,582c6fef43a0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+5,582c6fef43a0,MSIredy,L1: Protocol determines message is now ready to be processed,0,1066,cycle
+5,582c6fef43a0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,1066,cycle
+5,582c6fef43a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,1066,cycle
+5,582c6fef43a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,1067,cycle
+5,582c6fef43a0,add2q_u,L1 receives message from the bus,0,1068,cycle
+5,582c6fef43a0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,1068,cycle
+5,582c6fef43a0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+5,582c6fef43a0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,1068,cycle
+5,582c6fef43a0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,1068,cycle
+5,582c6fef43a0,add_req,LLC miss -> LLC sends request to DRAM,LLC,1068,cycle
+5,582c6fef43a0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,1325,cycle
+5,582c6fef43a0,respond,LLC sends response message to the requesting L1,LLC,1325,cycle
+5,582c6fef43a0,updaDat,LLC updates its data array,LLC,1325,cycle
+5,582c6fef43a0,wrCache,LLC: New data written to cache,LLC,1325,cycle
+5,582c6fef43a0,respond,LLC sends response message to the requesting L1,LLC,1326,cycle
+5,582c6fef43a0,add2q_u,L1 receives message from the bus,0,1330,cycle
+5,582c6fef43a0,respond,L1 responds to core,0,1330,cycle
+5,582c6fef43a0,updaDat,L1 attempts to update its data array,0,1330,cycle
+5,582c6fef43a0,wrCache,L1: New data written to cache,0,1330,cycle
+6,582c6fef43e0,add2q_l,L1: The message is added to the processing queue from the core,0,1332,cycle
+6,582c6fef43e0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+6,582c6fef43e0,MSIredy,L1: Protocol determines message is now ready to be processed,0,1332,cycle
+6,582c6fef43e0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,1332,cycle
+6,582c6fef43e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,1332,cycle
+6,582c6fef43e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,1333,cycle
+6,582c6fef43e0,add2q_u,L1 receives message from the bus,0,1334,cycle
+6,582c6fef43e0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,1334,cycle
+6,582c6fef43e0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+6,582c6fef43e0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,1334,cycle
+6,582c6fef43e0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,1334,cycle
+6,582c6fef43e0,add_req,LLC miss -> LLC sends request to DRAM,LLC,1334,cycle
+6,582c6fef43e0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,1591,cycle
+6,582c6fef43e0,respond,LLC sends response message to the requesting L1,LLC,1591,cycle
+6,582c6fef43e0,updaDat,LLC updates its data array,LLC,1591,cycle
+6,582c6fef43e0,wrCache,LLC: New data written to cache,LLC,1591,cycle
+6,582c6fef43e0,respond,LLC sends response message to the requesting L1,LLC,1592,cycle
+6,582c6fef43e0,add2q_u,L1 receives message from the bus,0,1596,cycle
+6,582c6fef43e0,respond,L1 responds to core,0,1596,cycle
+6,582c6fef43e0,updaDat,L1 attempts to update its data array,0,1596,cycle
+6,582c6fef43e0,wrCache,L1: New data written to cache,0,1596,cycle
+7,582c6fef4420,add2q_l,L1: The message is added to the processing queue from the core,0,1598,cycle
+7,582c6fef4420,Miss?  ,L1: Was the request a miss?,0,1,boolean
+7,582c6fef4420,MSIredy,L1: Protocol determines message is now ready to be processed,0,1598,cycle
+7,582c6fef4420,msgProc,L1: message is taken from the L1's processing queue to be processed,0,1598,cycle
+7,582c6fef4420,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,1598,cycle
+7,582c6fef4420,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,1599,cycle
+7,582c6fef4420,add2q_u,L1 receives message from the bus,0,1600,cycle
+7,582c6fef4420,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,1600,cycle
+7,582c6fef4420,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+7,582c6fef4420,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,1600,cycle
+7,582c6fef4420,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,1600,cycle
+7,582c6fef4420,add_req,LLC miss -> LLC sends request to DRAM,LLC,1600,cycle
+7,582c6fef4420,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,1857,cycle
+7,582c6fef4420,respond,LLC sends response message to the requesting L1,LLC,1857,cycle
+7,582c6fef4420,updaDat,LLC updates its data array,LLC,1857,cycle
+7,582c6fef4420,wrCache,LLC: New data written to cache,LLC,1857,cycle
+7,582c6fef4420,respond,LLC sends response message to the requesting L1,LLC,1858,cycle
+7,582c6fef4420,add2q_u,L1 receives message from the bus,0,1862,cycle
+7,582c6fef4420,respond,L1 responds to core,0,1862,cycle
+7,582c6fef4420,updaDat,L1 attempts to update its data array,0,1862,cycle
+7,582c6fef4420,wrCache,L1: New data written to cache,0,1862,cycle
+8,582c6fef4460,add2q_l,L1: The message is added to the processing queue from the core,0,1864,cycle
+8,582c6fef4460,Miss?  ,L1: Was the request a miss?,0,1,boolean
+8,582c6fef4460,MSIredy,L1: Protocol determines message is now ready to be processed,0,1864,cycle
+8,582c6fef4460,msgProc,L1: message is taken from the L1's processing queue to be processed,0,1864,cycle
+8,582c6fef4460,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,1864,cycle
+8,582c6fef4460,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,1865,cycle
+8,582c6fef4460,add2q_u,L1 receives message from the bus,0,1866,cycle
+8,582c6fef4460,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,1866,cycle
+8,582c6fef4460,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+8,582c6fef4460,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,1866,cycle
+8,582c6fef4460,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,1866,cycle
+8,582c6fef4460,add_req,LLC miss -> LLC sends request to DRAM,LLC,1866,cycle
+8,582c6fef4460,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,2123,cycle
+8,582c6fef4460,respond,LLC sends response message to the requesting L1,LLC,2123,cycle
+8,582c6fef4460,updaDat,LLC updates its data array,LLC,2123,cycle
+8,582c6fef4460,wrCache,LLC: New data written to cache,LLC,2123,cycle
+8,582c6fef4460,respond,LLC sends response message to the requesting L1,LLC,2124,cycle
+8,582c6fef4460,add2q_u,L1 receives message from the bus,0,2128,cycle
+8,582c6fef4460,respond,L1 responds to core,0,2128,cycle
+8,582c6fef4460,updaDat,L1 attempts to update its data array,0,2128,cycle
+8,582c6fef4460,wrCache,L1: New data written to cache,0,2128,cycle
+9,582c6fef44a0,add2q_l,L1: The message is added to the processing queue from the core,0,2130,cycle
+9,582c6fef44a0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+9,582c6fef44a0,MSIredy,L1: Protocol determines message is now ready to be processed,0,2130,cycle
+9,582c6fef44a0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,2130,cycle
+9,582c6fef44a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,2130,cycle
+9,582c6fef44a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,2131,cycle
+9,582c6fef44a0,add2q_u,L1 receives message from the bus,0,2132,cycle
+9,582c6fef44a0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,2132,cycle
+9,582c6fef44a0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+9,582c6fef44a0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,2132,cycle
+9,582c6fef44a0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,2132,cycle
+9,582c6fef44a0,add_req,LLC miss -> LLC sends request to DRAM,LLC,2132,cycle
+9,582c6fef44a0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,2389,cycle
+9,582c6fef44a0,respond,LLC sends response message to the requesting L1,LLC,2389,cycle
+9,582c6fef44a0,updaDat,LLC updates its data array,LLC,2389,cycle
+9,582c6fef44a0,wrCache,LLC: New data written to cache,LLC,2389,cycle
+9,582c6fef44a0,respond,LLC sends response message to the requesting L1,LLC,2390,cycle
+9,582c6fef44a0,add2q_u,L1 receives message from the bus,0,2394,cycle
+9,582c6fef44a0,respond,L1 responds to core,0,2394,cycle
+9,582c6fef44a0,updaDat,L1 attempts to update its data array,0,2394,cycle
+9,582c6fef44a0,wrCache,L1: New data written to cache,0,2394,cycle
+10,582c6fef44e0,add2q_l,L1: The message is added to the processing queue from the core,0,2396,cycle
+10,582c6fef44e0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+10,582c6fef44e0,MSIredy,L1: Protocol determines message is now ready to be processed,0,2396,cycle
+10,582c6fef44e0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,2396,cycle
+10,582c6fef44e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,2396,cycle
+10,582c6fef44e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,2397,cycle
+10,582c6fef44e0,add2q_u,L1 receives message from the bus,0,2398,cycle
+10,582c6fef44e0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,2398,cycle
+10,582c6fef44e0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+10,582c6fef44e0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,2398,cycle
+10,582c6fef44e0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,2398,cycle
+10,582c6fef44e0,add_req,LLC miss -> LLC sends request to DRAM,LLC,2398,cycle
+10,582c6fef44e0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,2655,cycle
+10,582c6fef44e0,respond,LLC sends response message to the requesting L1,LLC,2655,cycle
+10,582c6fef44e0,updaDat,LLC updates its data array,LLC,2655,cycle
+10,582c6fef44e0,wrCache,LLC: New data written to cache,LLC,2655,cycle
+10,582c6fef44e0,respond,LLC sends response message to the requesting L1,LLC,2656,cycle
+10,582c6fef44e0,add2q_u,L1 receives message from the bus,0,2660,cycle
+10,582c6fef44e0,respond,L1 responds to core,0,2660,cycle
+10,582c6fef44e0,updaDat,L1 attempts to update its data array,0,2660,cycle
+10,582c6fef44e0,wrCache,L1: New data written to cache,0,2660,cycle
+11,582c6fef4520,add2q_l,L1: The message is added to the processing queue from the core,0,2662,cycle
+11,582c6fef4520,Miss?  ,L1: Was the request a miss?,0,1,boolean
+11,582c6fef4520,MSIredy,L1: Protocol determines message is now ready to be processed,0,2662,cycle
+11,582c6fef4520,msgProc,L1: message is taken from the L1's processing queue to be processed,0,2662,cycle
+11,582c6fef4520,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,2662,cycle
+11,582c6fef4520,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,2663,cycle
+11,582c6fef4520,add2q_u,L1 receives message from the bus,0,2664,cycle
+11,582c6fef4520,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,2664,cycle
+11,582c6fef4520,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+11,582c6fef4520,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,2664,cycle
+11,582c6fef4520,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,2664,cycle
+11,582c6fef4520,add_req,LLC miss -> LLC sends request to DRAM,LLC,2664,cycle
+11,582c6fef4520,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,2921,cycle
+11,582c6fef4520,respond,LLC sends response message to the requesting L1,LLC,2921,cycle
+11,582c6fef4520,updaDat,LLC updates its data array,LLC,2921,cycle
+11,582c6fef4520,wrCache,LLC: New data written to cache,LLC,2921,cycle
+11,582c6fef4520,respond,LLC sends response message to the requesting L1,LLC,2922,cycle
+11,582c6fef4520,add2q_u,L1 receives message from the bus,0,2926,cycle
+11,582c6fef4520,respond,L1 responds to core,0,2926,cycle
+11,582c6fef4520,updaDat,L1 attempts to update its data array,0,2926,cycle
+11,582c6fef4520,wrCache,L1: New data written to cache,0,2926,cycle
+12,582c6fef4560,add2q_l,L1: The message is added to the processing queue from the core,0,2928,cycle
+12,582c6fef4560,Miss?  ,L1: Was the request a miss?,0,1,boolean
+12,582c6fef4560,MSIredy,L1: Protocol determines message is now ready to be processed,0,2928,cycle
+12,582c6fef4560,msgProc,L1: message is taken from the L1's processing queue to be processed,0,2928,cycle
+12,582c6fef4560,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,2928,cycle
+12,582c6fef4560,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,2929,cycle
+12,582c6fef4560,add2q_u,L1 receives message from the bus,0,2930,cycle
+12,582c6fef4560,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,2930,cycle
+12,582c6fef4560,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+12,582c6fef4560,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,2930,cycle
+12,582c6fef4560,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,2930,cycle
+12,582c6fef4560,add_req,LLC miss -> LLC sends request to DRAM,LLC,2930,cycle
+12,582c6fef4560,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,3187,cycle
+12,582c6fef4560,respond,LLC sends response message to the requesting L1,LLC,3187,cycle
+12,582c6fef4560,updaDat,LLC updates its data array,LLC,3187,cycle
+12,582c6fef4560,wrCache,LLC: New data written to cache,LLC,3187,cycle
+12,582c6fef4560,respond,LLC sends response message to the requesting L1,LLC,3188,cycle
+12,582c6fef4560,add2q_u,L1 receives message from the bus,0,3192,cycle
+12,582c6fef4560,respond,L1 responds to core,0,3192,cycle
+12,582c6fef4560,updaDat,L1 attempts to update its data array,0,3192,cycle
+12,582c6fef4560,wrCache,L1: New data written to cache,0,3192,cycle
+13,582c6fef45a0,add2q_l,L1: The message is added to the processing queue from the core,0,3194,cycle
+13,582c6fef45a0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+13,582c6fef45a0,MSIredy,L1: Protocol determines message is now ready to be processed,0,3194,cycle
+13,582c6fef45a0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,3194,cycle
+13,582c6fef45a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,3194,cycle
+13,582c6fef45a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,3195,cycle
+13,582c6fef45a0,add2q_u,L1 receives message from the bus,0,3196,cycle
+13,582c6fef45a0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,3196,cycle
+13,582c6fef45a0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+13,582c6fef45a0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,3196,cycle
+13,582c6fef45a0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,3196,cycle
+13,582c6fef45a0,add_req,LLC miss -> LLC sends request to DRAM,LLC,3196,cycle
+13,582c6fef45a0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,3453,cycle
+13,582c6fef45a0,respond,LLC sends response message to the requesting L1,LLC,3453,cycle
+13,582c6fef45a0,updaDat,LLC updates its data array,LLC,3453,cycle
+13,582c6fef45a0,wrCache,LLC: New data written to cache,LLC,3453,cycle
+13,582c6fef45a0,respond,LLC sends response message to the requesting L1,LLC,3454,cycle
+13,582c6fef45a0,add2q_u,L1 receives message from the bus,0,3458,cycle
+13,582c6fef45a0,respond,L1 responds to core,0,3458,cycle
+13,582c6fef45a0,updaDat,L1 attempts to update its data array,0,3458,cycle
+13,582c6fef45a0,wrCache,L1: New data written to cache,0,3458,cycle
+14,582c6fef45e0,add2q_l,L1: The message is added to the processing queue from the core,0,3460,cycle
+14,582c6fef45e0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+14,582c6fef45e0,MSIredy,L1: Protocol determines message is now ready to be processed,0,3460,cycle
+14,582c6fef45e0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,3460,cycle
+14,582c6fef45e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,3460,cycle
+14,582c6fef45e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,3461,cycle
+14,582c6fef45e0,add2q_u,L1 receives message from the bus,0,3462,cycle
+14,582c6fef45e0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,3462,cycle
+14,582c6fef45e0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+14,582c6fef45e0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,3462,cycle
+14,582c6fef45e0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,3462,cycle
+14,582c6fef45e0,add_req,LLC miss -> LLC sends request to DRAM,LLC,3462,cycle
+14,582c6fef45e0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,3719,cycle
+14,582c6fef45e0,respond,LLC sends response message to the requesting L1,LLC,3719,cycle
+14,582c6fef45e0,updaDat,LLC updates its data array,LLC,3719,cycle
+14,582c6fef45e0,wrCache,LLC: New data written to cache,LLC,3719,cycle
+14,582c6fef45e0,respond,LLC sends response message to the requesting L1,LLC,3720,cycle
+14,582c6fef45e0,add2q_u,L1 receives message from the bus,0,3724,cycle
+14,582c6fef45e0,respond,L1 responds to core,0,3724,cycle
+14,582c6fef45e0,updaDat,L1 attempts to update its data array,0,3724,cycle
+14,582c6fef45e0,wrCache,L1: New data written to cache,0,3724,cycle
+15,582c6fef4620,add2q_l,L1: The message is added to the processing queue from the core,0,3726,cycle
+15,582c6fef4620,Miss?  ,L1: Was the request a miss?,0,1,boolean
+15,582c6fef4620,MSIredy,L1: Protocol determines message is now ready to be processed,0,3726,cycle
+15,582c6fef4620,msgProc,L1: message is taken from the L1's processing queue to be processed,0,3726,cycle
+15,582c6fef4620,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,3726,cycle
+15,582c6fef4620,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,3727,cycle
+15,582c6fef4620,add2q_u,L1 receives message from the bus,0,3728,cycle
+15,582c6fef4620,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,3728,cycle
+15,582c6fef4620,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+15,582c6fef4620,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,3728,cycle
+15,582c6fef4620,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,3728,cycle
+15,582c6fef4620,add_req,LLC miss -> LLC sends request to DRAM,LLC,3728,cycle
+15,582c6fef4620,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,3985,cycle
+15,582c6fef4620,respond,LLC sends response message to the requesting L1,LLC,3985,cycle
+15,582c6fef4620,updaDat,LLC updates its data array,LLC,3985,cycle
+15,582c6fef4620,wrCache,LLC: New data written to cache,LLC,3985,cycle
+15,582c6fef4620,respond,LLC sends response message to the requesting L1,LLC,3986,cycle
+15,582c6fef4620,add2q_u,L1 receives message from the bus,0,3990,cycle
+15,582c6fef4620,respond,L1 responds to core,0,3990,cycle
+15,582c6fef4620,updaDat,L1 attempts to update its data array,0,3990,cycle
+15,582c6fef4620,wrCache,L1: New data written to cache,0,3990,cycle
+16,582c6fef4660,add2q_l,L1: The message is added to the processing queue from the core,0,3992,cycle
+16,582c6fef4660,Miss?  ,L1: Was the request a miss?,0,1,boolean
+16,582c6fef4660,MSIredy,L1: Protocol determines message is now ready to be processed,0,3992,cycle
+16,582c6fef4660,msgProc,L1: message is taken from the L1's processing queue to be processed,0,3992,cycle
+16,582c6fef4660,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,3992,cycle
+16,582c6fef4660,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,3993,cycle
+16,582c6fef4660,add2q_u,L1 receives message from the bus,0,3994,cycle
+16,582c6fef4660,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,3994,cycle
+16,582c6fef4660,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+16,582c6fef4660,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,3994,cycle
+16,582c6fef4660,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,3994,cycle
+16,582c6fef4660,add_req,LLC miss -> LLC sends request to DRAM,LLC,3994,cycle
+16,582c6fef4660,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,4251,cycle
+16,582c6fef4660,respond,LLC sends response message to the requesting L1,LLC,4251,cycle
+16,582c6fef4660,updaDat,LLC updates its data array,LLC,4251,cycle
+16,582c6fef4660,wrCache,LLC: New data written to cache,LLC,4251,cycle
+16,582c6fef4660,respond,LLC sends response message to the requesting L1,LLC,4252,cycle
+16,582c6fef4660,add2q_u,L1 receives message from the bus,0,4256,cycle
+16,582c6fef4660,respond,L1 responds to core,0,4256,cycle
+16,582c6fef4660,updaDat,L1 attempts to update its data array,0,4256,cycle
+16,582c6fef4660,wrCache,L1: New data written to cache,0,4256,cycle
+17,582c6fef46a0,add2q_l,L1: The message is added to the processing queue from the core,0,4258,cycle
+17,582c6fef46a0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+17,582c6fef46a0,MSIredy,L1: Protocol determines message is now ready to be processed,0,4258,cycle
+17,582c6fef46a0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,4258,cycle
+17,582c6fef46a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,4258,cycle
+17,582c6fef46a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,4259,cycle
+17,582c6fef46a0,add2q_u,L1 receives message from the bus,0,4260,cycle
+17,582c6fef46a0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,4260,cycle
+17,582c6fef46a0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+17,582c6fef46a0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,4260,cycle
+17,582c6fef46a0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,4260,cycle
+17,582c6fef46a0,add_req,LLC miss -> LLC sends request to DRAM,LLC,4260,cycle
+17,582c6fef46a0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,4517,cycle
+17,582c6fef46a0,respond,LLC sends response message to the requesting L1,LLC,4517,cycle
+17,582c6fef46a0,updaDat,LLC updates its data array,LLC,4517,cycle
+17,582c6fef46a0,wrCache,LLC: New data written to cache,LLC,4517,cycle
+17,582c6fef46a0,respond,LLC sends response message to the requesting L1,LLC,4518,cycle
+17,582c6fef46a0,add2q_u,L1 receives message from the bus,0,4522,cycle
+17,582c6fef46a0,respond,L1 responds to core,0,4522,cycle
+17,582c6fef46a0,updaDat,L1 attempts to update its data array,0,4522,cycle
+17,582c6fef46a0,wrCache,L1: New data written to cache,0,4522,cycle
+18,582c6fef46e0,add2q_l,L1: The message is added to the processing queue from the core,0,4524,cycle
+18,582c6fef46e0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+18,582c6fef46e0,MSIredy,L1: Protocol determines message is now ready to be processed,0,4524,cycle
+18,582c6fef46e0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,4524,cycle
+18,582c6fef46e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,4524,cycle
+18,582c6fef46e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,4525,cycle
+18,582c6fef46e0,add2q_u,L1 receives message from the bus,0,4526,cycle
+18,582c6fef46e0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,4526,cycle
+18,582c6fef46e0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+18,582c6fef46e0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,4526,cycle
+18,582c6fef46e0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,4526,cycle
+18,582c6fef46e0,add_req,LLC miss -> LLC sends request to DRAM,LLC,4526,cycle
+18,582c6fef46e0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,4783,cycle
+18,582c6fef46e0,respond,LLC sends response message to the requesting L1,LLC,4783,cycle
+18,582c6fef46e0,updaDat,LLC updates its data array,LLC,4783,cycle
+18,582c6fef46e0,wrCache,LLC: New data written to cache,LLC,4783,cycle
+18,582c6fef46e0,respond,LLC sends response message to the requesting L1,LLC,4784,cycle
+18,582c6fef46e0,add2q_u,L1 receives message from the bus,0,4788,cycle
+18,582c6fef46e0,respond,L1 responds to core,0,4788,cycle
+18,582c6fef46e0,updaDat,L1 attempts to update its data array,0,4788,cycle
+18,582c6fef46e0,wrCache,L1: New data written to cache,0,4788,cycle
+19,582c6fef4720,add2q_l,L1: The message is added to the processing queue from the core,0,4790,cycle
+19,582c6fef4720,Miss?  ,L1: Was the request a miss?,0,1,boolean
+19,582c6fef4720,MSIredy,L1: Protocol determines message is now ready to be processed,0,4790,cycle
+19,582c6fef4720,msgProc,L1: message is taken from the L1's processing queue to be processed,0,4790,cycle
+19,582c6fef4720,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,4790,cycle
+19,582c6fef4720,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,4791,cycle
+19,582c6fef4720,add2q_u,L1 receives message from the bus,0,4792,cycle
+19,582c6fef4720,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,4792,cycle
+19,582c6fef4720,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+19,582c6fef4720,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,4792,cycle
+19,582c6fef4720,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,4792,cycle
+19,582c6fef4720,add_req,LLC miss -> LLC sends request to DRAM,LLC,4792,cycle
+19,582c6fef4720,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,5049,cycle
+19,582c6fef4720,respond,LLC sends response message to the requesting L1,LLC,5049,cycle
+19,582c6fef4720,updaDat,LLC updates its data array,LLC,5049,cycle
+19,582c6fef4720,wrCache,LLC: New data written to cache,LLC,5049,cycle
+19,582c6fef4720,respond,LLC sends response message to the requesting L1,LLC,5050,cycle
+19,582c6fef4720,add2q_u,L1 receives message from the bus,0,5054,cycle
+19,582c6fef4720,respond,L1 responds to core,0,5054,cycle
+19,582c6fef4720,updaDat,L1 attempts to update its data array,0,5054,cycle
+19,582c6fef4720,wrCache,L1: New data written to cache,0,5054,cycle
+20,582c6fef4760,add2q_l,L1: The message is added to the processing queue from the core,0,5056,cycle
+20,582c6fef4760,Miss?  ,L1: Was the request a miss?,0,1,boolean
+20,582c6fef4760,MSIredy,L1: Protocol determines message is now ready to be processed,0,5056,cycle
+20,582c6fef4760,msgProc,L1: message is taken from the L1's processing queue to be processed,0,5056,cycle
+20,582c6fef4760,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,5056,cycle
+20,582c6fef4760,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,5057,cycle
+20,582c6fef4760,add2q_u,L1 receives message from the bus,0,5058,cycle
+20,582c6fef4760,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,5058,cycle
+20,582c6fef4760,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+20,582c6fef4760,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,5058,cycle
+20,582c6fef4760,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,5058,cycle
+20,582c6fef4760,add_req,LLC miss -> LLC sends request to DRAM,LLC,5058,cycle
+20,582c6fef4760,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,5315,cycle
+20,582c6fef4760,respond,LLC sends response message to the requesting L1,LLC,5315,cycle
+20,582c6fef4760,updaDat,LLC updates its data array,LLC,5315,cycle
+20,582c6fef4760,wrCache,LLC: New data written to cache,LLC,5315,cycle
+20,582c6fef4760,respond,LLC sends response message to the requesting L1,LLC,5316,cycle
+20,582c6fef4760,add2q_u,L1 receives message from the bus,0,5320,cycle
+20,582c6fef4760,respond,L1 responds to core,0,5320,cycle
+20,582c6fef4760,updaDat,L1 attempts to update its data array,0,5320,cycle
+20,582c6fef4760,wrCache,L1: New data written to cache,0,5320,cycle
+21,582c6fef47a0,add2q_l,L1: The message is added to the processing queue from the core,0,5322,cycle
+21,582c6fef47a0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+21,582c6fef47a0,MSIredy,L1: Protocol determines message is now ready to be processed,0,5322,cycle
+21,582c6fef47a0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,5322,cycle
+21,582c6fef47a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,5322,cycle
+21,582c6fef47a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,5323,cycle
+21,582c6fef47a0,add2q_u,L1 receives message from the bus,0,5324,cycle
+21,582c6fef47a0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,5324,cycle
+21,582c6fef47a0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+21,582c6fef47a0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,5324,cycle
+21,582c6fef47a0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,5324,cycle
+21,582c6fef47a0,add_req,LLC miss -> LLC sends request to DRAM,LLC,5324,cycle
+21,582c6fef47a0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,5581,cycle
+21,582c6fef47a0,respond,LLC sends response message to the requesting L1,LLC,5581,cycle
+21,582c6fef47a0,updaDat,LLC updates its data array,LLC,5581,cycle
+21,582c6fef47a0,wrCache,LLC: New data written to cache,LLC,5581,cycle
+21,582c6fef47a0,respond,LLC sends response message to the requesting L1,LLC,5582,cycle
+21,582c6fef47a0,add2q_u,L1 receives message from the bus,0,5586,cycle
+21,582c6fef47a0,respond,L1 responds to core,0,5586,cycle
+21,582c6fef47a0,updaDat,L1 attempts to update its data array,0,5586,cycle
+21,582c6fef47a0,wrCache,L1: New data written to cache,0,5586,cycle
+22,582c6fef47e0,add2q_l,L1: The message is added to the processing queue from the core,0,5588,cycle
+22,582c6fef47e0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+22,582c6fef47e0,MSIredy,L1: Protocol determines message is now ready to be processed,0,5588,cycle
+22,582c6fef47e0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,5588,cycle
+22,582c6fef47e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,5588,cycle
+22,582c6fef47e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,5589,cycle
+22,582c6fef47e0,add2q_u,L1 receives message from the bus,0,5590,cycle
+22,582c6fef47e0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,5590,cycle
+22,582c6fef47e0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+22,582c6fef47e0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,5590,cycle
+22,582c6fef47e0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,5590,cycle
+22,582c6fef47e0,add_req,LLC miss -> LLC sends request to DRAM,LLC,5590,cycle
+22,582c6fef47e0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,5847,cycle
+22,582c6fef47e0,respond,LLC sends response message to the requesting L1,LLC,5847,cycle
+22,582c6fef47e0,updaDat,LLC updates its data array,LLC,5847,cycle
+22,582c6fef47e0,wrCache,LLC: New data written to cache,LLC,5847,cycle
+22,582c6fef47e0,respond,LLC sends response message to the requesting L1,LLC,5848,cycle
+22,582c6fef47e0,add2q_u,L1 receives message from the bus,0,5852,cycle
+22,582c6fef47e0,respond,L1 responds to core,0,5852,cycle
+22,582c6fef47e0,updaDat,L1 attempts to update its data array,0,5852,cycle
+22,582c6fef47e0,wrCache,L1: New data written to cache,0,5852,cycle
+23,582c6fef4820,add2q_l,L1: The message is added to the processing queue from the core,0,5854,cycle
+23,582c6fef4820,Miss?  ,L1: Was the request a miss?,0,1,boolean
+23,582c6fef4820,MSIredy,L1: Protocol determines message is now ready to be processed,0,5854,cycle
+23,582c6fef4820,msgProc,L1: message is taken from the L1's processing queue to be processed,0,5854,cycle
+23,582c6fef4820,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,5854,cycle
+23,582c6fef4820,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,5855,cycle
+23,582c6fef4820,add2q_u,L1 receives message from the bus,0,5856,cycle
+23,582c6fef4820,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,5856,cycle
+23,582c6fef4820,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+23,582c6fef4820,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,5856,cycle
+23,582c6fef4820,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,5856,cycle
+23,582c6fef4820,add_req,LLC miss -> LLC sends request to DRAM,LLC,5856,cycle
+23,582c6fef4820,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,6113,cycle
+23,582c6fef4820,respond,LLC sends response message to the requesting L1,LLC,6113,cycle
+23,582c6fef4820,updaDat,LLC updates its data array,LLC,6113,cycle
+23,582c6fef4820,wrCache,LLC: New data written to cache,LLC,6113,cycle
+23,582c6fef4820,respond,LLC sends response message to the requesting L1,LLC,6114,cycle
+23,582c6fef4820,add2q_u,L1 receives message from the bus,0,6118,cycle
+23,582c6fef4820,respond,L1 responds to core,0,6118,cycle
+23,582c6fef4820,updaDat,L1 attempts to update its data array,0,6118,cycle
+23,582c6fef4820,wrCache,L1: New data written to cache,0,6118,cycle
+24,582c6fef4860,add2q_l,L1: The message is added to the processing queue from the core,0,6120,cycle
+24,582c6fef4860,Miss?  ,L1: Was the request a miss?,0,1,boolean
+24,582c6fef4860,MSIredy,L1: Protocol determines message is now ready to be processed,0,6120,cycle
+24,582c6fef4860,msgProc,L1: message is taken from the L1's processing queue to be processed,0,6120,cycle
+24,582c6fef4860,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,6120,cycle
+24,582c6fef4860,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,6121,cycle
+24,582c6fef4860,add2q_u,L1 receives message from the bus,0,6122,cycle
+24,582c6fef4860,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,6122,cycle
+24,582c6fef4860,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+24,582c6fef4860,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,6122,cycle
+24,582c6fef4860,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,6122,cycle
+24,582c6fef4860,add_req,LLC miss -> LLC sends request to DRAM,LLC,6122,cycle
+24,582c6fef4860,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,6379,cycle
+24,582c6fef4860,respond,LLC sends response message to the requesting L1,LLC,6379,cycle
+24,582c6fef4860,updaDat,LLC updates its data array,LLC,6379,cycle
+24,582c6fef4860,wrCache,LLC: New data written to cache,LLC,6379,cycle
+24,582c6fef4860,respond,LLC sends response message to the requesting L1,LLC,6380,cycle
+24,582c6fef4860,add2q_u,L1 receives message from the bus,0,6384,cycle
+24,582c6fef4860,respond,L1 responds to core,0,6384,cycle
+24,582c6fef4860,updaDat,L1 attempts to update its data array,0,6384,cycle
+24,582c6fef4860,wrCache,L1: New data written to cache,0,6384,cycle
+25,582c6fef48a0,add2q_l,L1: The message is added to the processing queue from the core,0,6386,cycle
+25,582c6fef48a0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+25,582c6fef48a0,MSIredy,L1: Protocol determines message is now ready to be processed,0,6386,cycle
+25,582c6fef48a0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,6386,cycle
+25,582c6fef48a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,6386,cycle
+25,582c6fef48a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,6387,cycle
+25,582c6fef48a0,add2q_u,L1 receives message from the bus,0,6388,cycle
+25,582c6fef48a0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,6388,cycle
+25,582c6fef48a0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+25,582c6fef48a0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,6388,cycle
+25,582c6fef48a0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,6388,cycle
+25,582c6fef48a0,add_req,LLC miss -> LLC sends request to DRAM,LLC,6388,cycle
+25,582c6fef48a0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,6645,cycle
+25,582c6fef48a0,respond,LLC sends response message to the requesting L1,LLC,6645,cycle
+25,582c6fef48a0,updaDat,LLC updates its data array,LLC,6645,cycle
+25,582c6fef48a0,wrCache,LLC: New data written to cache,LLC,6645,cycle
+25,582c6fef48a0,respond,LLC sends response message to the requesting L1,LLC,6646,cycle
+25,582c6fef48a0,add2q_u,L1 receives message from the bus,0,6650,cycle
+25,582c6fef48a0,respond,L1 responds to core,0,6650,cycle
+25,582c6fef48a0,updaDat,L1 attempts to update its data array,0,6650,cycle
+25,582c6fef48a0,wrCache,L1: New data written to cache,0,6650,cycle
+26,582c6fef48e0,add2q_l,L1: The message is added to the processing queue from the core,0,6652,cycle
+26,582c6fef48e0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+26,582c6fef48e0,MSIredy,L1: Protocol determines message is now ready to be processed,0,6652,cycle
+26,582c6fef48e0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,6652,cycle
+26,582c6fef48e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,6652,cycle
+26,582c6fef48e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,6653,cycle
+26,582c6fef48e0,add2q_u,L1 receives message from the bus,0,6654,cycle
+26,582c6fef48e0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,6654,cycle
+26,582c6fef48e0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+26,582c6fef48e0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,6654,cycle
+26,582c6fef48e0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,6654,cycle
+26,582c6fef48e0,add_req,LLC miss -> LLC sends request to DRAM,LLC,6654,cycle
+26,582c6fef48e0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,6911,cycle
+26,582c6fef48e0,respond,LLC sends response message to the requesting L1,LLC,6911,cycle
+26,582c6fef48e0,updaDat,LLC updates its data array,LLC,6911,cycle
+26,582c6fef48e0,wrCache,LLC: New data written to cache,LLC,6911,cycle
+26,582c6fef48e0,respond,LLC sends response message to the requesting L1,LLC,6912,cycle
+26,582c6fef48e0,add2q_u,L1 receives message from the bus,0,6916,cycle
+26,582c6fef48e0,respond,L1 responds to core,0,6916,cycle
+26,582c6fef48e0,updaDat,L1 attempts to update its data array,0,6916,cycle
+26,582c6fef48e0,wrCache,L1: New data written to cache,0,6916,cycle
+27,582c6fef4920,add2q_l,L1: The message is added to the processing queue from the core,0,6918,cycle
+27,582c6fef4920,Miss?  ,L1: Was the request a miss?,0,1,boolean
+27,582c6fef4920,MSIredy,L1: Protocol determines message is now ready to be processed,0,6918,cycle
+27,582c6fef4920,msgProc,L1: message is taken from the L1's processing queue to be processed,0,6918,cycle
+27,582c6fef4920,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,6918,cycle
+27,582c6fef4920,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,6919,cycle
+27,582c6fef4920,add2q_u,L1 receives message from the bus,0,6920,cycle
+27,582c6fef4920,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,6920,cycle
+27,582c6fef4920,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+27,582c6fef4920,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,6920,cycle
+27,582c6fef4920,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,6920,cycle
+27,582c6fef4920,add_req,LLC miss -> LLC sends request to DRAM,LLC,6920,cycle
+27,582c6fef4920,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,7177,cycle
+27,582c6fef4920,respond,LLC sends response message to the requesting L1,LLC,7177,cycle
+27,582c6fef4920,updaDat,LLC updates its data array,LLC,7177,cycle
+27,582c6fef4920,wrCache,LLC: New data written to cache,LLC,7177,cycle
+27,582c6fef4920,respond,LLC sends response message to the requesting L1,LLC,7178,cycle
+27,582c6fef4920,add2q_u,L1 receives message from the bus,0,7182,cycle
+27,582c6fef4920,respond,L1 responds to core,0,7182,cycle
+27,582c6fef4920,updaDat,L1 attempts to update its data array,0,7182,cycle
+27,582c6fef4920,wrCache,L1: New data written to cache,0,7182,cycle
+28,582c6fef4960,add2q_l,L1: The message is added to the processing queue from the core,0,7184,cycle
+28,582c6fef4960,Miss?  ,L1: Was the request a miss?,0,1,boolean
+28,582c6fef4960,MSIredy,L1: Protocol determines message is now ready to be processed,0,7184,cycle
+28,582c6fef4960,msgProc,L1: message is taken from the L1's processing queue to be processed,0,7184,cycle
+28,582c6fef4960,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,7184,cycle
+28,582c6fef4960,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,7185,cycle
+28,582c6fef4960,add2q_u,L1 receives message from the bus,0,7186,cycle
+28,582c6fef4960,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,7186,cycle
+28,582c6fef4960,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+28,582c6fef4960,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,7186,cycle
+28,582c6fef4960,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,7186,cycle
+28,582c6fef4960,add_req,LLC miss -> LLC sends request to DRAM,LLC,7186,cycle
+28,582c6fef4960,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,7443,cycle
+28,582c6fef4960,respond,LLC sends response message to the requesting L1,LLC,7443,cycle
+28,582c6fef4960,updaDat,LLC updates its data array,LLC,7443,cycle
+28,582c6fef4960,wrCache,LLC: New data written to cache,LLC,7443,cycle
+28,582c6fef4960,respond,LLC sends response message to the requesting L1,LLC,7444,cycle
+28,582c6fef4960,add2q_u,L1 receives message from the bus,0,7448,cycle
+28,582c6fef4960,respond,L1 responds to core,0,7448,cycle
+28,582c6fef4960,updaDat,L1 attempts to update its data array,0,7448,cycle
+28,582c6fef4960,wrCache,L1: New data written to cache,0,7448,cycle
+29,582c6fef49a0,add2q_l,L1: The message is added to the processing queue from the core,0,7450,cycle
+29,582c6fef49a0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+29,582c6fef49a0,MSIredy,L1: Protocol determines message is now ready to be processed,0,7450,cycle
+29,582c6fef49a0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,7450,cycle
+29,582c6fef49a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,7450,cycle
+29,582c6fef49a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,7451,cycle
+29,582c6fef49a0,add2q_u,L1 receives message from the bus,0,7452,cycle
+29,582c6fef49a0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,7452,cycle
+29,582c6fef49a0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+29,582c6fef49a0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,7452,cycle
+29,582c6fef49a0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,7452,cycle
+29,582c6fef49a0,add_req,LLC miss -> LLC sends request to DRAM,LLC,7452,cycle
+29,582c6fef49a0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,7709,cycle
+29,582c6fef49a0,respond,LLC sends response message to the requesting L1,LLC,7709,cycle
+29,582c6fef49a0,updaDat,LLC updates its data array,LLC,7709,cycle
+29,582c6fef49a0,wrCache,LLC: New data written to cache,LLC,7709,cycle
+29,582c6fef49a0,respond,LLC sends response message to the requesting L1,LLC,7710,cycle
+29,582c6fef49a0,add2q_u,L1 receives message from the bus,0,7714,cycle
+29,582c6fef49a0,respond,L1 responds to core,0,7714,cycle
+29,582c6fef49a0,updaDat,L1 attempts to update its data array,0,7714,cycle
+29,582c6fef49a0,wrCache,L1: New data written to cache,0,7714,cycle
+30,582c6fef49e0,add2q_l,L1: The message is added to the processing queue from the core,0,7716,cycle
+30,582c6fef49e0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+30,582c6fef49e0,MSIredy,L1: Protocol determines message is now ready to be processed,0,7716,cycle
+30,582c6fef49e0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,7716,cycle
+30,582c6fef49e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,7716,cycle
+30,582c6fef49e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,7717,cycle
+30,582c6fef49e0,add2q_u,L1 receives message from the bus,0,7718,cycle
+30,582c6fef49e0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,7718,cycle
+30,582c6fef49e0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+30,582c6fef49e0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,7718,cycle
+30,582c6fef49e0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,7718,cycle
+30,582c6fef49e0,add_req,LLC miss -> LLC sends request to DRAM,LLC,7718,cycle
+30,582c6fef49e0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,7975,cycle
+30,582c6fef49e0,respond,LLC sends response message to the requesting L1,LLC,7975,cycle
+30,582c6fef49e0,updaDat,LLC updates its data array,LLC,7975,cycle
+30,582c6fef49e0,wrCache,LLC: New data written to cache,LLC,7975,cycle
+30,582c6fef49e0,respond,LLC sends response message to the requesting L1,LLC,7976,cycle
+30,582c6fef49e0,add2q_u,L1 receives message from the bus,0,7980,cycle
+30,582c6fef49e0,respond,L1 responds to core,0,7980,cycle
+30,582c6fef49e0,updaDat,L1 attempts to update its data array,0,7980,cycle
+30,582c6fef49e0,wrCache,L1: New data written to cache,0,7980,cycle
+31,582c6fef4a20,add2q_l,L1: The message is added to the processing queue from the core,0,7982,cycle
+31,582c6fef4a20,Miss?  ,L1: Was the request a miss?,0,1,boolean
+31,582c6fef4a20,MSIredy,L1: Protocol determines message is now ready to be processed,0,7982,cycle
+31,582c6fef4a20,msgProc,L1: message is taken from the L1's processing queue to be processed,0,7982,cycle
+31,582c6fef4a20,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,7982,cycle
+31,582c6fef4a20,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,7983,cycle
+31,582c6fef4a20,add2q_u,L1 receives message from the bus,0,7984,cycle
+31,582c6fef4a20,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,7984,cycle
+31,582c6fef4a20,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+31,582c6fef4a20,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,7984,cycle
+31,582c6fef4a20,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,7984,cycle
+31,582c6fef4a20,add_req,LLC miss -> LLC sends request to DRAM,LLC,7984,cycle
+31,582c6fef4a20,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,8241,cycle
+31,582c6fef4a20,respond,LLC sends response message to the requesting L1,LLC,8241,cycle
+31,582c6fef4a20,updaDat,LLC updates its data array,LLC,8241,cycle
+31,582c6fef4a20,wrCache,LLC: New data written to cache,LLC,8241,cycle
+31,582c6fef4a20,respond,LLC sends response message to the requesting L1,LLC,8242,cycle
+31,582c6fef4a20,add2q_u,L1 receives message from the bus,0,8246,cycle
+31,582c6fef4a20,respond,L1 responds to core,0,8246,cycle
+31,582c6fef4a20,updaDat,L1 attempts to update its data array,0,8246,cycle
+31,582c6fef4a20,wrCache,L1: New data written to cache,0,8246,cycle
+32,582c6fef4a60,add2q_l,L1: The message is added to the processing queue from the core,0,8248,cycle
+32,582c6fef4a60,Miss?  ,L1: Was the request a miss?,0,1,boolean
+32,582c6fef4a60,MSIredy,L1: Protocol determines message is now ready to be processed,0,8248,cycle
+32,582c6fef4a60,msgProc,L1: message is taken from the L1's processing queue to be processed,0,8248,cycle
+32,582c6fef4a60,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,8248,cycle
+32,582c6fef4a60,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,8249,cycle
+32,582c6fef4a60,add2q_u,L1 receives message from the bus,0,8250,cycle
+32,582c6fef4a60,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,8250,cycle
+32,582c6fef4a60,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+32,582c6fef4a60,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,8250,cycle
+32,582c6fef4a60,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,8250,cycle
+32,582c6fef4a60,add_req,LLC miss -> LLC sends request to DRAM,LLC,8250,cycle
+32,582c6fef4a60,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,8507,cycle
+32,582c6fef4a60,respond,LLC sends response message to the requesting L1,LLC,8507,cycle
+32,582c6fef4a60,updaDat,LLC updates its data array,LLC,8507,cycle
+32,582c6fef4a60,wrCache,LLC: New data written to cache,LLC,8507,cycle
+32,582c6fef4a60,respond,LLC sends response message to the requesting L1,LLC,8508,cycle
+32,582c6fef4a60,add2q_u,L1 receives message from the bus,0,8512,cycle
+32,582c6fef4a60,respond,L1 responds to core,0,8512,cycle
+32,582c6fef4a60,updaDat,L1 attempts to update its data array,0,8512,cycle
+32,582c6fef4a60,wrCache,L1: New data written to cache,0,8512,cycle
+33,582c6fef4aa0,add2q_l,L1: The message is added to the processing queue from the core,0,8514,cycle
+33,582c6fef4aa0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+33,582c6fef4aa0,MSIredy,L1: Protocol determines message is now ready to be processed,0,8514,cycle
+33,582c6fef4aa0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,8514,cycle
+33,582c6fef4aa0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,8514,cycle
+33,582c6fef4aa0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,8515,cycle
+33,582c6fef4aa0,add2q_u,L1 receives message from the bus,0,8516,cycle
+33,582c6fef4aa0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,8516,cycle
+33,582c6fef4aa0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+33,582c6fef4aa0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,8516,cycle
+33,582c6fef4aa0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,8516,cycle
+33,582c6fef4aa0,add_req,LLC miss -> LLC sends request to DRAM,LLC,8516,cycle
+33,582c6fef4aa0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,8773,cycle
+33,582c6fef4aa0,respond,LLC sends response message to the requesting L1,LLC,8773,cycle
+33,582c6fef4aa0,updaDat,LLC updates its data array,LLC,8773,cycle
+33,582c6fef4aa0,wrCache,LLC: New data written to cache,LLC,8773,cycle
+33,582c6fef4aa0,respond,LLC sends response message to the requesting L1,LLC,8774,cycle
+33,582c6fef4aa0,add2q_u,L1 receives message from the bus,0,8778,cycle
+33,582c6fef4aa0,respond,L1 responds to core,0,8778,cycle
+33,582c6fef4aa0,updaDat,L1 attempts to update its data array,0,8778,cycle
+33,582c6fef4aa0,wrCache,L1: New data written to cache,0,8778,cycle
+34,582c6fef4ae0,add2q_l,L1: The message is added to the processing queue from the core,0,8780,cycle
+34,582c6fef4ae0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+34,582c6fef4ae0,MSIredy,L1: Protocol determines message is now ready to be processed,0,8780,cycle
+34,582c6fef4ae0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,8780,cycle
+34,582c6fef4ae0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,8780,cycle
+34,582c6fef4ae0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,8781,cycle
+34,582c6fef4ae0,add2q_u,L1 receives message from the bus,0,8782,cycle
+34,582c6fef4ae0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,8782,cycle
+34,582c6fef4ae0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+34,582c6fef4ae0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,8782,cycle
+34,582c6fef4ae0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,8782,cycle
+34,582c6fef4ae0,add_req,LLC miss -> LLC sends request to DRAM,LLC,8782,cycle
+34,582c6fef4ae0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,9039,cycle
+34,582c6fef4ae0,respond,LLC sends response message to the requesting L1,LLC,9039,cycle
+34,582c6fef4ae0,updaDat,LLC updates its data array,LLC,9039,cycle
+34,582c6fef4ae0,wrCache,LLC: New data written to cache,LLC,9039,cycle
+34,582c6fef4ae0,respond,LLC sends response message to the requesting L1,LLC,9040,cycle
+34,582c6fef4ae0,add2q_u,L1 receives message from the bus,0,9044,cycle
+34,582c6fef4ae0,respond,L1 responds to core,0,9044,cycle
+34,582c6fef4ae0,updaDat,L1 attempts to update its data array,0,9044,cycle
+34,582c6fef4ae0,wrCache,L1: New data written to cache,0,9044,cycle
+35,582c6fef4b20,add2q_l,L1: The message is added to the processing queue from the core,0,9046,cycle
+35,582c6fef4b20,Miss?  ,L1: Was the request a miss?,0,1,boolean
+35,582c6fef4b20,MSIredy,L1: Protocol determines message is now ready to be processed,0,9046,cycle
+35,582c6fef4b20,msgProc,L1: message is taken from the L1's processing queue to be processed,0,9046,cycle
+35,582c6fef4b20,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,9046,cycle
+35,582c6fef4b20,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,9047,cycle
+35,582c6fef4b20,add2q_u,L1 receives message from the bus,0,9048,cycle
+35,582c6fef4b20,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,9048,cycle
+35,582c6fef4b20,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+35,582c6fef4b20,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,9048,cycle
+35,582c6fef4b20,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,9048,cycle
+35,582c6fef4b20,add_req,LLC miss -> LLC sends request to DRAM,LLC,9048,cycle
+35,582c6fef4b20,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,9305,cycle
+35,582c6fef4b20,respond,LLC sends response message to the requesting L1,LLC,9305,cycle
+35,582c6fef4b20,updaDat,LLC updates its data array,LLC,9305,cycle
+35,582c6fef4b20,wrCache,LLC: New data written to cache,LLC,9305,cycle
+35,582c6fef4b20,respond,LLC sends response message to the requesting L1,LLC,9306,cycle
+35,582c6fef4b20,add2q_u,L1 receives message from the bus,0,9310,cycle
+35,582c6fef4b20,respond,L1 responds to core,0,9310,cycle
+35,582c6fef4b20,updaDat,L1 attempts to update its data array,0,9310,cycle
+35,582c6fef4b20,wrCache,L1: New data written to cache,0,9310,cycle
+36,582c6fef4b60,add2q_l,L1: The message is added to the processing queue from the core,0,9312,cycle
+36,582c6fef4b60,Miss?  ,L1: Was the request a miss?,0,1,boolean
+36,582c6fef4b60,MSIredy,L1: Protocol determines message is now ready to be processed,0,9312,cycle
+36,582c6fef4b60,msgProc,L1: message is taken from the L1's processing queue to be processed,0,9312,cycle
+36,582c6fef4b60,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,9312,cycle
+36,582c6fef4b60,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,9313,cycle
+36,582c6fef4b60,add2q_u,L1 receives message from the bus,0,9314,cycle
+36,582c6fef4b60,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,9314,cycle
+36,582c6fef4b60,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+36,582c6fef4b60,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,9314,cycle
+36,582c6fef4b60,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,9314,cycle
+36,582c6fef4b60,add_req,LLC miss -> LLC sends request to DRAM,LLC,9314,cycle
+36,582c6fef4b60,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,9571,cycle
+36,582c6fef4b60,respond,LLC sends response message to the requesting L1,LLC,9571,cycle
+36,582c6fef4b60,updaDat,LLC updates its data array,LLC,9571,cycle
+36,582c6fef4b60,wrCache,LLC: New data written to cache,LLC,9571,cycle
+36,582c6fef4b60,respond,LLC sends response message to the requesting L1,LLC,9572,cycle
+36,582c6fef4b60,add2q_u,L1 receives message from the bus,0,9576,cycle
+36,582c6fef4b60,respond,L1 responds to core,0,9576,cycle
+36,582c6fef4b60,updaDat,L1 attempts to update its data array,0,9576,cycle
+36,582c6fef4b60,wrCache,L1: New data written to cache,0,9576,cycle
+37,582c6fef4ba0,add2q_l,L1: The message is added to the processing queue from the core,0,9578,cycle
+37,582c6fef4ba0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+37,582c6fef4ba0,MSIredy,L1: Protocol determines message is now ready to be processed,0,9578,cycle
+37,582c6fef4ba0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,9578,cycle
+37,582c6fef4ba0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,9578,cycle
+37,582c6fef4ba0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,9579,cycle
+37,582c6fef4ba0,add2q_u,L1 receives message from the bus,0,9580,cycle
+37,582c6fef4ba0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,9580,cycle
+37,582c6fef4ba0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+37,582c6fef4ba0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,9580,cycle
+37,582c6fef4ba0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,9580,cycle
+37,582c6fef4ba0,add_req,LLC miss -> LLC sends request to DRAM,LLC,9580,cycle
+37,582c6fef4ba0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,9837,cycle
+37,582c6fef4ba0,respond,LLC sends response message to the requesting L1,LLC,9837,cycle
+37,582c6fef4ba0,updaDat,LLC updates its data array,LLC,9837,cycle
+37,582c6fef4ba0,wrCache,LLC: New data written to cache,LLC,9837,cycle
+37,582c6fef4ba0,respond,LLC sends response message to the requesting L1,LLC,9838,cycle
+37,582c6fef4ba0,add2q_u,L1 receives message from the bus,0,9842,cycle
+37,582c6fef4ba0,respond,L1 responds to core,0,9842,cycle
+37,582c6fef4ba0,updaDat,L1 attempts to update its data array,0,9842,cycle
+37,582c6fef4ba0,wrCache,L1: New data written to cache,0,9842,cycle
+38,582c6fef4be0,add2q_l,L1: The message is added to the processing queue from the core,0,9844,cycle
+38,582c6fef4be0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+38,582c6fef4be0,MSIredy,L1: Protocol determines message is now ready to be processed,0,9844,cycle
+38,582c6fef4be0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,9844,cycle
+38,582c6fef4be0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,9844,cycle
+38,582c6fef4be0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,9845,cycle
+38,582c6fef4be0,add2q_u,L1 receives message from the bus,0,9846,cycle
+38,582c6fef4be0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,9846,cycle
+38,582c6fef4be0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+38,582c6fef4be0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,9846,cycle
+38,582c6fef4be0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,9846,cycle
+38,582c6fef4be0,add_req,LLC miss -> LLC sends request to DRAM,LLC,9846,cycle
+38,582c6fef4be0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,10103,cycle
+38,582c6fef4be0,respond,LLC sends response message to the requesting L1,LLC,10103,cycle
+38,582c6fef4be0,updaDat,LLC updates its data array,LLC,10103,cycle
+38,582c6fef4be0,wrCache,LLC: New data written to cache,LLC,10103,cycle
+38,582c6fef4be0,respond,LLC sends response message to the requesting L1,LLC,10104,cycle
+38,582c6fef4be0,add2q_u,L1 receives message from the bus,0,10108,cycle
+38,582c6fef4be0,respond,L1 responds to core,0,10108,cycle
+38,582c6fef4be0,updaDat,L1 attempts to update its data array,0,10108,cycle
+38,582c6fef4be0,wrCache,L1: New data written to cache,0,10108,cycle
+39,582c6fef4c20,add2q_l,L1: The message is added to the processing queue from the core,0,10110,cycle
+39,582c6fef4c20,Miss?  ,L1: Was the request a miss?,0,1,boolean
+39,582c6fef4c20,MSIredy,L1: Protocol determines message is now ready to be processed,0,10110,cycle
+39,582c6fef4c20,msgProc,L1: message is taken from the L1's processing queue to be processed,0,10110,cycle
+39,582c6fef4c20,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,10110,cycle
+39,582c6fef4c20,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,10111,cycle
+39,582c6fef4c20,add2q_u,L1 receives message from the bus,0,10112,cycle
+39,582c6fef4c20,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,10112,cycle
+39,582c6fef4c20,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+39,582c6fef4c20,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,10112,cycle
+39,582c6fef4c20,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,10112,cycle
+39,582c6fef4c20,add_req,LLC miss -> LLC sends request to DRAM,LLC,10112,cycle
+39,582c6fef4c20,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,10369,cycle
+39,582c6fef4c20,respond,LLC sends response message to the requesting L1,LLC,10369,cycle
+39,582c6fef4c20,updaDat,LLC updates its data array,LLC,10369,cycle
+39,582c6fef4c20,wrCache,LLC: New data written to cache,LLC,10369,cycle
+39,582c6fef4c20,respond,LLC sends response message to the requesting L1,LLC,10370,cycle
+39,582c6fef4c20,add2q_u,L1 receives message from the bus,0,10374,cycle
+39,582c6fef4c20,respond,L1 responds to core,0,10374,cycle
+39,582c6fef4c20,updaDat,L1 attempts to update its data array,0,10374,cycle
+39,582c6fef4c20,wrCache,L1: New data written to cache,0,10374,cycle
+40,582c6fef4c60,add2q_l,L1: The message is added to the processing queue from the core,0,10376,cycle
+40,582c6fef4c60,Miss?  ,L1: Was the request a miss?,0,1,boolean
+40,582c6fef4c60,MSIredy,L1: Protocol determines message is now ready to be processed,0,10376,cycle
+40,582c6fef4c60,msgProc,L1: message is taken from the L1's processing queue to be processed,0,10376,cycle
+40,582c6fef4c60,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,10376,cycle
+40,582c6fef4c60,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,10377,cycle
+40,582c6fef4c60,add2q_u,L1 receives message from the bus,0,10378,cycle
+40,582c6fef4c60,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,10378,cycle
+40,582c6fef4c60,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+40,582c6fef4c60,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,10378,cycle
+40,582c6fef4c60,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,10378,cycle
+40,582c6fef4c60,add_req,LLC miss -> LLC sends request to DRAM,LLC,10378,cycle
+40,582c6fef4c60,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,10635,cycle
+40,582c6fef4c60,respond,LLC sends response message to the requesting L1,LLC,10635,cycle
+40,582c6fef4c60,updaDat,LLC updates its data array,LLC,10635,cycle
+40,582c6fef4c60,wrCache,LLC: New data written to cache,LLC,10635,cycle
+40,582c6fef4c60,respond,LLC sends response message to the requesting L1,LLC,10636,cycle
+40,582c6fef4c60,add2q_u,L1 receives message from the bus,0,10640,cycle
+40,582c6fef4c60,respond,L1 responds to core,0,10640,cycle
+40,582c6fef4c60,updaDat,L1 attempts to update its data array,0,10640,cycle
+40,582c6fef4c60,wrCache,L1: New data written to cache,0,10640,cycle
+41,582c6fef4ca0,add2q_l,L1: The message is added to the processing queue from the core,0,10642,cycle
+41,582c6fef4ca0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+41,582c6fef4ca0,MSIredy,L1: Protocol determines message is now ready to be processed,0,10642,cycle
+41,582c6fef4ca0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,10642,cycle
+41,582c6fef4ca0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,10642,cycle
+41,582c6fef4ca0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,10643,cycle
+41,582c6fef4ca0,add2q_u,L1 receives message from the bus,0,10644,cycle
+41,582c6fef4ca0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,10644,cycle
+41,582c6fef4ca0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+41,582c6fef4ca0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,10644,cycle
+41,582c6fef4ca0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,10644,cycle
+41,582c6fef4ca0,add_req,LLC miss -> LLC sends request to DRAM,LLC,10644,cycle
+41,582c6fef4ca0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,10901,cycle
+41,582c6fef4ca0,respond,LLC sends response message to the requesting L1,LLC,10901,cycle
+41,582c6fef4ca0,updaDat,LLC updates its data array,LLC,10901,cycle
+41,582c6fef4ca0,wrCache,LLC: New data written to cache,LLC,10901,cycle
+41,582c6fef4ca0,respond,LLC sends response message to the requesting L1,LLC,10902,cycle
+41,582c6fef4ca0,add2q_u,L1 receives message from the bus,0,10906,cycle
+41,582c6fef4ca0,respond,L1 responds to core,0,10906,cycle
+41,582c6fef4ca0,updaDat,L1 attempts to update its data array,0,10906,cycle
+41,582c6fef4ca0,wrCache,L1: New data written to cache,0,10906,cycle
+42,582c6fef4ce0,add2q_l,L1: The message is added to the processing queue from the core,0,10908,cycle
+42,582c6fef4ce0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+42,582c6fef4ce0,MSIredy,L1: Protocol determines message is now ready to be processed,0,10908,cycle
+42,582c6fef4ce0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,10908,cycle
+42,582c6fef4ce0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,10908,cycle
+42,582c6fef4ce0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,10909,cycle
+42,582c6fef4ce0,add2q_u,L1 receives message from the bus,0,10910,cycle
+42,582c6fef4ce0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,10910,cycle
+42,582c6fef4ce0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+42,582c6fef4ce0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,10910,cycle
+42,582c6fef4ce0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,10910,cycle
+42,582c6fef4ce0,add_req,LLC miss -> LLC sends request to DRAM,LLC,10910,cycle
+42,582c6fef4ce0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,11167,cycle
+42,582c6fef4ce0,respond,LLC sends response message to the requesting L1,LLC,11167,cycle
+42,582c6fef4ce0,updaDat,LLC updates its data array,LLC,11167,cycle
+42,582c6fef4ce0,wrCache,LLC: New data written to cache,LLC,11167,cycle
+42,582c6fef4ce0,respond,LLC sends response message to the requesting L1,LLC,11168,cycle
+42,582c6fef4ce0,add2q_u,L1 receives message from the bus,0,11172,cycle
+42,582c6fef4ce0,respond,L1 responds to core,0,11172,cycle
+42,582c6fef4ce0,updaDat,L1 attempts to update its data array,0,11172,cycle
+42,582c6fef4ce0,wrCache,L1: New data written to cache,0,11172,cycle
+43,582c6fef4d20,add2q_l,L1: The message is added to the processing queue from the core,0,11174,cycle
+43,582c6fef4d20,Miss?  ,L1: Was the request a miss?,0,1,boolean
+43,582c6fef4d20,MSIredy,L1: Protocol determines message is now ready to be processed,0,11174,cycle
+43,582c6fef4d20,msgProc,L1: message is taken from the L1's processing queue to be processed,0,11174,cycle
+43,582c6fef4d20,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,11174,cycle
+43,582c6fef4d20,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,11175,cycle
+43,582c6fef4d20,add2q_u,L1 receives message from the bus,0,11176,cycle
+43,582c6fef4d20,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,11176,cycle
+43,582c6fef4d20,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+43,582c6fef4d20,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,11176,cycle
+43,582c6fef4d20,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,11176,cycle
+43,582c6fef4d20,add_req,LLC miss -> LLC sends request to DRAM,LLC,11176,cycle
+43,582c6fef4d20,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,11433,cycle
+43,582c6fef4d20,respond,LLC sends response message to the requesting L1,LLC,11433,cycle
+43,582c6fef4d20,updaDat,LLC updates its data array,LLC,11433,cycle
+43,582c6fef4d20,wrCache,LLC: New data written to cache,LLC,11433,cycle
+43,582c6fef4d20,respond,LLC sends response message to the requesting L1,LLC,11434,cycle
+43,582c6fef4d20,add2q_u,L1 receives message from the bus,0,11438,cycle
+43,582c6fef4d20,respond,L1 responds to core,0,11438,cycle
+43,582c6fef4d20,updaDat,L1 attempts to update its data array,0,11438,cycle
+43,582c6fef4d20,wrCache,L1: New data written to cache,0,11438,cycle
+44,582c6fef4d60,add2q_l,L1: The message is added to the processing queue from the core,0,11440,cycle
+44,582c6fef4d60,Miss?  ,L1: Was the request a miss?,0,1,boolean
+44,582c6fef4d60,MSIredy,L1: Protocol determines message is now ready to be processed,0,11440,cycle
+44,582c6fef4d60,msgProc,L1: message is taken from the L1's processing queue to be processed,0,11440,cycle
+44,582c6fef4d60,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,11440,cycle
+44,582c6fef4d60,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,11441,cycle
+44,582c6fef4d60,add2q_u,L1 receives message from the bus,0,11442,cycle
+44,582c6fef4d60,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,11442,cycle
+44,582c6fef4d60,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+44,582c6fef4d60,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,11442,cycle
+44,582c6fef4d60,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,11442,cycle
+44,582c6fef4d60,add_req,LLC miss -> LLC sends request to DRAM,LLC,11442,cycle
+44,582c6fef4d60,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,11699,cycle
+44,582c6fef4d60,respond,LLC sends response message to the requesting L1,LLC,11699,cycle
+44,582c6fef4d60,updaDat,LLC updates its data array,LLC,11699,cycle
+44,582c6fef4d60,wrCache,LLC: New data written to cache,LLC,11699,cycle
+44,582c6fef4d60,respond,LLC sends response message to the requesting L1,LLC,11700,cycle
+44,582c6fef4d60,add2q_u,L1 receives message from the bus,0,11704,cycle
+44,582c6fef4d60,respond,L1 responds to core,0,11704,cycle
+44,582c6fef4d60,updaDat,L1 attempts to update its data array,0,11704,cycle
+44,582c6fef4d60,wrCache,L1: New data written to cache,0,11704,cycle
+45,582c6fef4da0,add2q_l,L1: The message is added to the processing queue from the core,0,11706,cycle
+45,582c6fef4da0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+45,582c6fef4da0,MSIredy,L1: Protocol determines message is now ready to be processed,0,11706,cycle
+45,582c6fef4da0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,11706,cycle
+45,582c6fef4da0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,11706,cycle
+45,582c6fef4da0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,11707,cycle
+45,582c6fef4da0,add2q_u,L1 receives message from the bus,0,11708,cycle
+45,582c6fef4da0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,11708,cycle
+45,582c6fef4da0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+45,582c6fef4da0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,11708,cycle
+45,582c6fef4da0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,11708,cycle
+45,582c6fef4da0,add_req,LLC miss -> LLC sends request to DRAM,LLC,11708,cycle
+45,582c6fef4da0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,11965,cycle
+45,582c6fef4da0,respond,LLC sends response message to the requesting L1,LLC,11965,cycle
+45,582c6fef4da0,updaDat,LLC updates its data array,LLC,11965,cycle
+45,582c6fef4da0,wrCache,LLC: New data written to cache,LLC,11965,cycle
+45,582c6fef4da0,respond,LLC sends response message to the requesting L1,LLC,11966,cycle
+45,582c6fef4da0,add2q_u,L1 receives message from the bus,0,11970,cycle
+45,582c6fef4da0,respond,L1 responds to core,0,11970,cycle
+45,582c6fef4da0,updaDat,L1 attempts to update its data array,0,11970,cycle
+45,582c6fef4da0,wrCache,L1: New data written to cache,0,11970,cycle
+46,582c6fef4de0,add2q_l,L1: The message is added to the processing queue from the core,0,11972,cycle
+46,582c6fef4de0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+46,582c6fef4de0,MSIredy,L1: Protocol determines message is now ready to be processed,0,11972,cycle
+46,582c6fef4de0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,11972,cycle
+46,582c6fef4de0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,11972,cycle
+46,582c6fef4de0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,11973,cycle
+46,582c6fef4de0,add2q_u,L1 receives message from the bus,0,11974,cycle
+46,582c6fef4de0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,11974,cycle
+46,582c6fef4de0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+46,582c6fef4de0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,11974,cycle
+46,582c6fef4de0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,11974,cycle
+46,582c6fef4de0,add_req,LLC miss -> LLC sends request to DRAM,LLC,11974,cycle
+46,582c6fef4de0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,12231,cycle
+46,582c6fef4de0,respond,LLC sends response message to the requesting L1,LLC,12231,cycle
+46,582c6fef4de0,updaDat,LLC updates its data array,LLC,12231,cycle
+46,582c6fef4de0,wrCache,LLC: New data written to cache,LLC,12231,cycle
+46,582c6fef4de0,respond,LLC sends response message to the requesting L1,LLC,12232,cycle
+46,582c6fef4de0,add2q_u,L1 receives message from the bus,0,12236,cycle
+46,582c6fef4de0,respond,L1 responds to core,0,12236,cycle
+46,582c6fef4de0,updaDat,L1 attempts to update its data array,0,12236,cycle
+46,582c6fef4de0,wrCache,L1: New data written to cache,0,12236,cycle
+47,582c6fef4e20,add2q_l,L1: The message is added to the processing queue from the core,0,12238,cycle
+47,582c6fef4e20,Miss?  ,L1: Was the request a miss?,0,1,boolean
+47,582c6fef4e20,MSIredy,L1: Protocol determines message is now ready to be processed,0,12238,cycle
+47,582c6fef4e20,msgProc,L1: message is taken from the L1's processing queue to be processed,0,12238,cycle
+47,582c6fef4e20,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,12238,cycle
+47,582c6fef4e20,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,12239,cycle
+47,582c6fef4e20,add2q_u,L1 receives message from the bus,0,12240,cycle
+47,582c6fef4e20,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,12240,cycle
+47,582c6fef4e20,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+47,582c6fef4e20,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,12240,cycle
+47,582c6fef4e20,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,12240,cycle
+47,582c6fef4e20,add_req,LLC miss -> LLC sends request to DRAM,LLC,12240,cycle
+47,582c6fef4e20,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,12497,cycle
+47,582c6fef4e20,respond,LLC sends response message to the requesting L1,LLC,12497,cycle
+47,582c6fef4e20,updaDat,LLC updates its data array,LLC,12497,cycle
+47,582c6fef4e20,wrCache,LLC: New data written to cache,LLC,12497,cycle
+47,582c6fef4e20,respond,LLC sends response message to the requesting L1,LLC,12498,cycle
+47,582c6fef4e20,add2q_u,L1 receives message from the bus,0,12502,cycle
+47,582c6fef4e20,respond,L1 responds to core,0,12502,cycle
+47,582c6fef4e20,updaDat,L1 attempts to update its data array,0,12502,cycle
+47,582c6fef4e20,wrCache,L1: New data written to cache,0,12502,cycle
+48,582c6fef4e60,add2q_l,L1: The message is added to the processing queue from the core,0,12504,cycle
+48,582c6fef4e60,Miss?  ,L1: Was the request a miss?,0,1,boolean
+48,582c6fef4e60,MSIredy,L1: Protocol determines message is now ready to be processed,0,12504,cycle
+48,582c6fef4e60,msgProc,L1: message is taken from the L1's processing queue to be processed,0,12504,cycle
+48,582c6fef4e60,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,12504,cycle
+48,582c6fef4e60,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,12505,cycle
+48,582c6fef4e60,add2q_u,L1 receives message from the bus,0,12506,cycle
+48,582c6fef4e60,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,12506,cycle
+48,582c6fef4e60,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+48,582c6fef4e60,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,12506,cycle
+48,582c6fef4e60,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,12506,cycle
+48,582c6fef4e60,add_req,LLC miss -> LLC sends request to DRAM,LLC,12506,cycle
+48,582c6fef4e60,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,12763,cycle
+48,582c6fef4e60,respond,LLC sends response message to the requesting L1,LLC,12763,cycle
+48,582c6fef4e60,updaDat,LLC updates its data array,LLC,12763,cycle
+48,582c6fef4e60,wrCache,LLC: New data written to cache,LLC,12763,cycle
+48,582c6fef4e60,respond,LLC sends response message to the requesting L1,LLC,12764,cycle
+48,582c6fef4e60,add2q_u,L1 receives message from the bus,0,12768,cycle
+48,582c6fef4e60,respond,L1 responds to core,0,12768,cycle
+48,582c6fef4e60,updaDat,L1 attempts to update its data array,0,12768,cycle
+48,582c6fef4e60,wrCache,L1: New data written to cache,0,12768,cycle
+49,582c6fef4ea0,add2q_l,L1: The message is added to the processing queue from the core,0,12770,cycle
+49,582c6fef4ea0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+49,582c6fef4ea0,MSIredy,L1: Protocol determines message is now ready to be processed,0,12770,cycle
+49,582c6fef4ea0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,12770,cycle
+49,582c6fef4ea0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,12770,cycle
+49,582c6fef4ea0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,12771,cycle
+49,582c6fef4ea0,add2q_u,L1 receives message from the bus,0,12772,cycle
+49,582c6fef4ea0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,12772,cycle
+49,582c6fef4ea0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+49,582c6fef4ea0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,12772,cycle
+49,582c6fef4ea0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,12772,cycle
+49,582c6fef4ea0,add_req,LLC miss -> LLC sends request to DRAM,LLC,12772,cycle
+49,582c6fef4ea0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,13029,cycle
+49,582c6fef4ea0,respond,LLC sends response message to the requesting L1,LLC,13029,cycle
+49,582c6fef4ea0,updaDat,LLC updates its data array,LLC,13029,cycle
+49,582c6fef4ea0,wrCache,LLC: New data written to cache,LLC,13029,cycle
+49,582c6fef4ea0,respond,LLC sends response message to the requesting L1,LLC,13030,cycle
+49,582c6fef4ea0,add2q_u,L1 receives message from the bus,0,13034,cycle
+49,582c6fef4ea0,respond,L1 responds to core,0,13034,cycle
+49,582c6fef4ea0,updaDat,L1 attempts to update its data array,0,13034,cycle
+49,582c6fef4ea0,wrCache,L1: New data written to cache,0,13034,cycle
+50,582c6fef4ee0,add2q_l,L1: The message is added to the processing queue from the core,0,13036,cycle
+50,582c6fef4ee0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+50,582c6fef4ee0,MSIredy,L1: Protocol determines message is now ready to be processed,0,13036,cycle
+50,582c6fef4ee0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,13036,cycle
+50,582c6fef4ee0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,13036,cycle
+50,582c6fef4ee0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,13037,cycle
+50,582c6fef4ee0,add2q_u,L1 receives message from the bus,0,13038,cycle
+50,582c6fef4ee0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,13038,cycle
+50,582c6fef4ee0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+50,582c6fef4ee0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,13038,cycle
+50,582c6fef4ee0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,13038,cycle
+50,582c6fef4ee0,add_req,LLC miss -> LLC sends request to DRAM,LLC,13038,cycle
+50,582c6fef4ee0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,13295,cycle
+50,582c6fef4ee0,respond,LLC sends response message to the requesting L1,LLC,13295,cycle
+50,582c6fef4ee0,updaDat,LLC updates its data array,LLC,13295,cycle
+50,582c6fef4ee0,wrCache,LLC: New data written to cache,LLC,13295,cycle
+50,582c6fef4ee0,respond,LLC sends response message to the requesting L1,LLC,13296,cycle
+50,582c6fef4ee0,add2q_u,L1 receives message from the bus,0,13300,cycle
+50,582c6fef4ee0,respond,L1 responds to core,0,13300,cycle
+50,582c6fef4ee0,updaDat,L1 attempts to update its data array,0,13300,cycle
+50,582c6fef4ee0,wrCache,L1: New data written to cache,0,13300,cycle
+51,582c6fef4f20,add2q_l,L1: The message is added to the processing queue from the core,0,13302,cycle
+51,582c6fef4f20,Miss?  ,L1: Was the request a miss?,0,1,boolean
+51,582c6fef4f20,MSIredy,L1: Protocol determines message is now ready to be processed,0,13302,cycle
+51,582c6fef4f20,msgProc,L1: message is taken from the L1's processing queue to be processed,0,13302,cycle
+51,582c6fef4f20,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,13302,cycle
+51,582c6fef4f20,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,13303,cycle
+51,582c6fef4f20,add2q_u,L1 receives message from the bus,0,13304,cycle
+51,582c6fef4f20,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,13304,cycle
+51,582c6fef4f20,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+51,582c6fef4f20,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,13304,cycle
+51,582c6fef4f20,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,13304,cycle
+51,582c6fef4f20,add_req,LLC miss -> LLC sends request to DRAM,LLC,13304,cycle
+51,582c6fef4f20,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,13561,cycle
+51,582c6fef4f20,respond,LLC sends response message to the requesting L1,LLC,13561,cycle
+51,582c6fef4f20,updaDat,LLC updates its data array,LLC,13561,cycle
+51,582c6fef4f20,wrCache,LLC: New data written to cache,LLC,13561,cycle
+51,582c6fef4f20,respond,LLC sends response message to the requesting L1,LLC,13562,cycle
+51,582c6fef4f20,add2q_u,L1 receives message from the bus,0,13566,cycle
+51,582c6fef4f20,respond,L1 responds to core,0,13566,cycle
+51,582c6fef4f20,updaDat,L1 attempts to update its data array,0,13566,cycle
+51,582c6fef4f20,wrCache,L1: New data written to cache,0,13566,cycle
+52,582c6fef4f60,add2q_l,L1: The message is added to the processing queue from the core,0,13568,cycle
+52,582c6fef4f60,Miss?  ,L1: Was the request a miss?,0,1,boolean
+52,582c6fef4f60,MSIredy,L1: Protocol determines message is now ready to be processed,0,13568,cycle
+52,582c6fef4f60,msgProc,L1: message is taken from the L1's processing queue to be processed,0,13568,cycle
+52,582c6fef4f60,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,13568,cycle
+52,582c6fef4f60,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,13569,cycle
+52,582c6fef4f60,add2q_u,L1 receives message from the bus,0,13570,cycle
+52,582c6fef4f60,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,13570,cycle
+52,582c6fef4f60,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+52,582c6fef4f60,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,13570,cycle
+52,582c6fef4f60,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,13570,cycle
+52,582c6fef4f60,add_req,LLC miss -> LLC sends request to DRAM,LLC,13570,cycle
+52,582c6fef4f60,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,13827,cycle
+52,582c6fef4f60,respond,LLC sends response message to the requesting L1,LLC,13827,cycle
+52,582c6fef4f60,updaDat,LLC updates its data array,LLC,13827,cycle
+52,582c6fef4f60,wrCache,LLC: New data written to cache,LLC,13827,cycle
+52,582c6fef4f60,respond,LLC sends response message to the requesting L1,LLC,13828,cycle
+52,582c6fef4f60,add2q_u,L1 receives message from the bus,0,13832,cycle
+52,582c6fef4f60,respond,L1 responds to core,0,13832,cycle
+52,582c6fef4f60,updaDat,L1 attempts to update its data array,0,13832,cycle
+52,582c6fef4f60,wrCache,L1: New data written to cache,0,13832,cycle
+53,582c6fef4fa0,add2q_l,L1: The message is added to the processing queue from the core,0,13834,cycle
+53,582c6fef4fa0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+53,582c6fef4fa0,MSIredy,L1: Protocol determines message is now ready to be processed,0,13834,cycle
+53,582c6fef4fa0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,13834,cycle
+53,582c6fef4fa0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,13834,cycle
+53,582c6fef4fa0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,13835,cycle
+53,582c6fef4fa0,add2q_u,L1 receives message from the bus,0,13836,cycle
+53,582c6fef4fa0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,13836,cycle
+53,582c6fef4fa0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+53,582c6fef4fa0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,13836,cycle
+53,582c6fef4fa0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,13836,cycle
+53,582c6fef4fa0,add_req,LLC miss -> LLC sends request to DRAM,LLC,13836,cycle
+53,582c6fef4fa0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,14093,cycle
+53,582c6fef4fa0,respond,LLC sends response message to the requesting L1,LLC,14093,cycle
+53,582c6fef4fa0,updaDat,LLC updates its data array,LLC,14093,cycle
+53,582c6fef4fa0,wrCache,LLC: New data written to cache,LLC,14093,cycle
+53,582c6fef4fa0,respond,LLC sends response message to the requesting L1,LLC,14094,cycle
+53,582c6fef4fa0,add2q_u,L1 receives message from the bus,0,14098,cycle
+53,582c6fef4fa0,respond,L1 responds to core,0,14098,cycle
+53,582c6fef4fa0,updaDat,L1 attempts to update its data array,0,14098,cycle
+53,582c6fef4fa0,wrCache,L1: New data written to cache,0,14098,cycle
+54,582c6fef4fe0,add2q_l,L1: The message is added to the processing queue from the core,0,14100,cycle
+54,582c6fef4fe0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+54,582c6fef4fe0,MSIredy,L1: Protocol determines message is now ready to be processed,0,14100,cycle
+54,582c6fef4fe0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,14100,cycle
+54,582c6fef4fe0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,14100,cycle
+54,582c6fef4fe0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,14101,cycle
+54,582c6fef4fe0,add2q_u,L1 receives message from the bus,0,14102,cycle
+54,582c6fef4fe0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,14102,cycle
+54,582c6fef4fe0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+54,582c6fef4fe0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,14102,cycle
+54,582c6fef4fe0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,14102,cycle
+54,582c6fef4fe0,add_req,LLC miss -> LLC sends request to DRAM,LLC,14102,cycle
+54,582c6fef4fe0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,14359,cycle
+54,582c6fef4fe0,respond,LLC sends response message to the requesting L1,LLC,14359,cycle
+54,582c6fef4fe0,updaDat,LLC updates its data array,LLC,14359,cycle
+54,582c6fef4fe0,wrCache,LLC: New data written to cache,LLC,14359,cycle
+54,582c6fef4fe0,respond,LLC sends response message to the requesting L1,LLC,14360,cycle
+54,582c6fef4fe0,add2q_u,L1 receives message from the bus,0,14364,cycle
+54,582c6fef4fe0,respond,L1 responds to core,0,14364,cycle
+54,582c6fef4fe0,updaDat,L1 attempts to update its data array,0,14364,cycle
+54,582c6fef4fe0,wrCache,L1: New data written to cache,0,14364,cycle
+55,582c6fef5020,add2q_l,L1: The message is added to the processing queue from the core,0,14366,cycle
+55,582c6fef5020,Miss?  ,L1: Was the request a miss?,0,1,boolean
+55,582c6fef5020,MSIredy,L1: Protocol determines message is now ready to be processed,0,14366,cycle
+55,582c6fef5020,msgProc,L1: message is taken from the L1's processing queue to be processed,0,14366,cycle
+55,582c6fef5020,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,14366,cycle
+55,582c6fef5020,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,14367,cycle
+55,582c6fef5020,add2q_u,L1 receives message from the bus,0,14368,cycle
+55,582c6fef5020,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,14368,cycle
+55,582c6fef5020,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+55,582c6fef5020,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,14368,cycle
+55,582c6fef5020,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,14368,cycle
+55,582c6fef5020,add_req,LLC miss -> LLC sends request to DRAM,LLC,14368,cycle
+55,582c6fef5020,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,14625,cycle
+55,582c6fef5020,respond,LLC sends response message to the requesting L1,LLC,14625,cycle
+55,582c6fef5020,updaDat,LLC updates its data array,LLC,14625,cycle
+55,582c6fef5020,wrCache,LLC: New data written to cache,LLC,14625,cycle
+55,582c6fef5020,respond,LLC sends response message to the requesting L1,LLC,14626,cycle
+55,582c6fef5020,add2q_u,L1 receives message from the bus,0,14630,cycle
+55,582c6fef5020,respond,L1 responds to core,0,14630,cycle
+55,582c6fef5020,updaDat,L1 attempts to update its data array,0,14630,cycle
+55,582c6fef5020,wrCache,L1: New data written to cache,0,14630,cycle
+56,582c6fef5060,add2q_l,L1: The message is added to the processing queue from the core,0,14632,cycle
+56,582c6fef5060,Miss?  ,L1: Was the request a miss?,0,1,boolean
+56,582c6fef5060,MSIredy,L1: Protocol determines message is now ready to be processed,0,14632,cycle
+56,582c6fef5060,msgProc,L1: message is taken from the L1's processing queue to be processed,0,14632,cycle
+56,582c6fef5060,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,14632,cycle
+56,582c6fef5060,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,14633,cycle
+56,582c6fef5060,add2q_u,L1 receives message from the bus,0,14634,cycle
+56,582c6fef5060,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,14634,cycle
+56,582c6fef5060,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+56,582c6fef5060,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,14634,cycle
+56,582c6fef5060,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,14634,cycle
+56,582c6fef5060,add_req,LLC miss -> LLC sends request to DRAM,LLC,14634,cycle
+56,582c6fef5060,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,14891,cycle
+56,582c6fef5060,respond,LLC sends response message to the requesting L1,LLC,14891,cycle
+56,582c6fef5060,updaDat,LLC updates its data array,LLC,14891,cycle
+56,582c6fef5060,wrCache,LLC: New data written to cache,LLC,14891,cycle
+56,582c6fef5060,respond,LLC sends response message to the requesting L1,LLC,14892,cycle
+56,582c6fef5060,add2q_u,L1 receives message from the bus,0,14896,cycle
+56,582c6fef5060,respond,L1 responds to core,0,14896,cycle
+56,582c6fef5060,updaDat,L1 attempts to update its data array,0,14896,cycle
+56,582c6fef5060,wrCache,L1: New data written to cache,0,14896,cycle
+57,582c6fef50a0,add2q_l,L1: The message is added to the processing queue from the core,0,14898,cycle
+57,582c6fef50a0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+57,582c6fef50a0,MSIredy,L1: Protocol determines message is now ready to be processed,0,14898,cycle
+57,582c6fef50a0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,14898,cycle
+57,582c6fef50a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,14898,cycle
+57,582c6fef50a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,14899,cycle
+57,582c6fef50a0,add2q_u,L1 receives message from the bus,0,14900,cycle
+57,582c6fef50a0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,14900,cycle
+57,582c6fef50a0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+57,582c6fef50a0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,14900,cycle
+57,582c6fef50a0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,14900,cycle
+57,582c6fef50a0,add_req,LLC miss -> LLC sends request to DRAM,LLC,14900,cycle
+57,582c6fef50a0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,15157,cycle
+57,582c6fef50a0,respond,LLC sends response message to the requesting L1,LLC,15157,cycle
+57,582c6fef50a0,updaDat,LLC updates its data array,LLC,15157,cycle
+57,582c6fef50a0,wrCache,LLC: New data written to cache,LLC,15157,cycle
+57,582c6fef50a0,respond,LLC sends response message to the requesting L1,LLC,15158,cycle
+57,582c6fef50a0,add2q_u,L1 receives message from the bus,0,15162,cycle
+57,582c6fef50a0,respond,L1 responds to core,0,15162,cycle
+57,582c6fef50a0,updaDat,L1 attempts to update its data array,0,15162,cycle
+57,582c6fef50a0,wrCache,L1: New data written to cache,0,15162,cycle
+58,582c6fef50e0,add2q_l,L1: The message is added to the processing queue from the core,0,15164,cycle
+58,582c6fef50e0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+58,582c6fef50e0,MSIredy,L1: Protocol determines message is now ready to be processed,0,15164,cycle
+58,582c6fef50e0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,15164,cycle
+58,582c6fef50e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,15164,cycle
+58,582c6fef50e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,15165,cycle
+58,582c6fef50e0,add2q_u,L1 receives message from the bus,0,15166,cycle
+58,582c6fef50e0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,15166,cycle
+58,582c6fef50e0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+58,582c6fef50e0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,15166,cycle
+58,582c6fef50e0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,15166,cycle
+58,582c6fef50e0,add_req,LLC miss -> LLC sends request to DRAM,LLC,15166,cycle
+58,582c6fef50e0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,15423,cycle
+58,582c6fef50e0,respond,LLC sends response message to the requesting L1,LLC,15423,cycle
+58,582c6fef50e0,updaDat,LLC updates its data array,LLC,15423,cycle
+58,582c6fef50e0,wrCache,LLC: New data written to cache,LLC,15423,cycle
+58,582c6fef50e0,respond,LLC sends response message to the requesting L1,LLC,15424,cycle
+58,582c6fef50e0,add2q_u,L1 receives message from the bus,0,15428,cycle
+58,582c6fef50e0,respond,L1 responds to core,0,15428,cycle
+58,582c6fef50e0,updaDat,L1 attempts to update its data array,0,15428,cycle
+58,582c6fef50e0,wrCache,L1: New data written to cache,0,15428,cycle
+59,582c6fef5120,add2q_l,L1: The message is added to the processing queue from the core,0,15430,cycle
+59,582c6fef5120,Miss?  ,L1: Was the request a miss?,0,1,boolean
+59,582c6fef5120,MSIredy,L1: Protocol determines message is now ready to be processed,0,15430,cycle
+59,582c6fef5120,msgProc,L1: message is taken from the L1's processing queue to be processed,0,15430,cycle
+59,582c6fef5120,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,15430,cycle
+59,582c6fef5120,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,15431,cycle
+59,582c6fef5120,add2q_u,L1 receives message from the bus,0,15432,cycle
+59,582c6fef5120,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,15432,cycle
+59,582c6fef5120,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+59,582c6fef5120,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,15432,cycle
+59,582c6fef5120,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,15432,cycle
+59,582c6fef5120,add_req,LLC miss -> LLC sends request to DRAM,LLC,15432,cycle
+59,582c6fef5120,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,15689,cycle
+59,582c6fef5120,respond,LLC sends response message to the requesting L1,LLC,15689,cycle
+59,582c6fef5120,updaDat,LLC updates its data array,LLC,15689,cycle
+59,582c6fef5120,wrCache,LLC: New data written to cache,LLC,15689,cycle
+59,582c6fef5120,respond,LLC sends response message to the requesting L1,LLC,15690,cycle
+59,582c6fef5120,add2q_u,L1 receives message from the bus,0,15694,cycle
+59,582c6fef5120,respond,L1 responds to core,0,15694,cycle
+59,582c6fef5120,updaDat,L1 attempts to update its data array,0,15694,cycle
+59,582c6fef5120,wrCache,L1: New data written to cache,0,15694,cycle
+60,582c6fef5160,add2q_l,L1: The message is added to the processing queue from the core,0,15696,cycle
+60,582c6fef5160,Miss?  ,L1: Was the request a miss?,0,1,boolean
+60,582c6fef5160,MSIredy,L1: Protocol determines message is now ready to be processed,0,15696,cycle
+60,582c6fef5160,msgProc,L1: message is taken from the L1's processing queue to be processed,0,15696,cycle
+60,582c6fef5160,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,15696,cycle
+60,582c6fef5160,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,15697,cycle
+60,582c6fef5160,add2q_u,L1 receives message from the bus,0,15698,cycle
+60,582c6fef5160,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,15698,cycle
+60,582c6fef5160,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+60,582c6fef5160,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,15698,cycle
+60,582c6fef5160,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,15698,cycle
+60,582c6fef5160,add_req,LLC miss -> LLC sends request to DRAM,LLC,15698,cycle
+60,582c6fef5160,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,15955,cycle
+60,582c6fef5160,respond,LLC sends response message to the requesting L1,LLC,15955,cycle
+60,582c6fef5160,updaDat,LLC updates its data array,LLC,15955,cycle
+60,582c6fef5160,wrCache,LLC: New data written to cache,LLC,15955,cycle
+60,582c6fef5160,respond,LLC sends response message to the requesting L1,LLC,15956,cycle
+60,582c6fef5160,add2q_u,L1 receives message from the bus,0,15960,cycle
+60,582c6fef5160,respond,L1 responds to core,0,15960,cycle
+60,582c6fef5160,updaDat,L1 attempts to update its data array,0,15960,cycle
+60,582c6fef5160,wrCache,L1: New data written to cache,0,15960,cycle
+61,582c6fef51a0,add2q_l,L1: The message is added to the processing queue from the core,0,15962,cycle
+61,582c6fef51a0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+61,582c6fef51a0,MSIredy,L1: Protocol determines message is now ready to be processed,0,15962,cycle
+61,582c6fef51a0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,15962,cycle
+61,582c6fef51a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,15962,cycle
+61,582c6fef51a0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,15963,cycle
+61,582c6fef51a0,add2q_u,L1 receives message from the bus,0,15964,cycle
+61,582c6fef51a0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,15964,cycle
+61,582c6fef51a0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+61,582c6fef51a0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,15964,cycle
+61,582c6fef51a0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,15964,cycle
+61,582c6fef51a0,add_req,LLC miss -> LLC sends request to DRAM,LLC,15964,cycle
+61,582c6fef51a0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,16221,cycle
+61,582c6fef51a0,respond,LLC sends response message to the requesting L1,LLC,16221,cycle
+61,582c6fef51a0,updaDat,LLC updates its data array,LLC,16221,cycle
+61,582c6fef51a0,wrCache,LLC: New data written to cache,LLC,16221,cycle
+61,582c6fef51a0,respond,LLC sends response message to the requesting L1,LLC,16222,cycle
+61,582c6fef51a0,add2q_u,L1 receives message from the bus,0,16226,cycle
+61,582c6fef51a0,respond,L1 responds to core,0,16226,cycle
+61,582c6fef51a0,updaDat,L1 attempts to update its data array,0,16226,cycle
+61,582c6fef51a0,wrCache,L1: New data written to cache,0,16226,cycle
+62,582c6fef51e0,add2q_l,L1: The message is added to the processing queue from the core,0,16228,cycle
+62,582c6fef51e0,Miss?  ,L1: Was the request a miss?,0,1,boolean
+62,582c6fef51e0,MSIredy,L1: Protocol determines message is now ready to be processed,0,16228,cycle
+62,582c6fef51e0,msgProc,L1: message is taken from the L1's processing queue to be processed,0,16228,cycle
+62,582c6fef51e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,16228,cycle
+62,582c6fef51e0,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,16229,cycle
+62,582c6fef51e0,add2q_u,L1 receives message from the bus,0,16230,cycle
+62,582c6fef51e0,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,16230,cycle
+62,582c6fef51e0,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+62,582c6fef51e0,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,16230,cycle
+62,582c6fef51e0,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,16230,cycle
+62,582c6fef51e0,add_req,LLC miss -> LLC sends request to DRAM,LLC,16230,cycle
+62,582c6fef51e0,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,16487,cycle
+62,582c6fef51e0,respond,LLC sends response message to the requesting L1,LLC,16487,cycle
+62,582c6fef51e0,updaDat,LLC updates its data array,LLC,16487,cycle
+62,582c6fef51e0,wrCache,LLC: New data written to cache,LLC,16487,cycle
+62,582c6fef51e0,respond,LLC sends response message to the requesting L1,LLC,16488,cycle
+62,582c6fef51e0,add2q_u,L1 receives message from the bus,0,16492,cycle
+62,582c6fef51e0,respond,L1 responds to core,0,16492,cycle
+62,582c6fef51e0,updaDat,L1 attempts to update its data array,0,16492,cycle
+62,582c6fef51e0,wrCache,L1: New data written to cache,0,16492,cycle
+63,582c6fef5220,add2q_l,L1: The message is added to the processing queue from the core,0,16494,cycle
+63,582c6fef5220,Miss?  ,L1: Was the request a miss?,0,1,boolean
+63,582c6fef5220,MSIredy,L1: Protocol determines message is now ready to be processed,0,16494,cycle
+63,582c6fef5220,msgProc,L1: message is taken from the L1's processing queue to be processed,0,16494,cycle
+63,582c6fef5220,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,16494,cycle
+63,582c6fef5220,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,16495,cycle
+63,582c6fef5220,add2q_u,L1 receives message from the bus,0,16496,cycle
+63,582c6fef5220,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,16496,cycle
+63,582c6fef5220,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+63,582c6fef5220,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,16496,cycle
+63,582c6fef5220,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,16496,cycle
+63,582c6fef5220,add_req,LLC miss -> LLC sends request to DRAM,LLC,16496,cycle
+63,582c6fef5220,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,16753,cycle
+63,582c6fef5220,respond,LLC sends response message to the requesting L1,LLC,16753,cycle
+63,582c6fef5220,updaDat,LLC updates its data array,LLC,16753,cycle
+63,582c6fef5220,wrCache,LLC: New data written to cache,LLC,16753,cycle
+63,582c6fef5220,respond,LLC sends response message to the requesting L1,LLC,16754,cycle
+63,582c6fef5220,add2q_u,L1 receives message from the bus,0,16758,cycle
+63,582c6fef5220,respond,L1 responds to core,0,16758,cycle
+63,582c6fef5220,updaDat,L1 attempts to update its data array,0,16758,cycle
+63,582c6fef5220,wrCache,L1: New data written to cache,0,16758,cycle
+64,582c6fef5260,add2q_l,L1: The message is added to the processing queue from the core,0,16760,cycle
+64,582c6fef5260,Miss?  ,L1: Was the request a miss?,0,1,boolean
+64,582c6fef5260,MSIredy,L1: Protocol determines message is now ready to be processed,0,16760,cycle
+64,582c6fef5260,msgProc,L1: message is taken from the L1's processing queue to be processed,0,16760,cycle
+64,582c6fef5260,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,16760,cycle
+64,582c6fef5260,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,16761,cycle
+64,582c6fef5260,add2q_u,L1 receives message from the bus,0,16762,cycle
+64,582c6fef5260,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,16762,cycle
+64,582c6fef5260,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+64,582c6fef5260,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,16762,cycle
+64,582c6fef5260,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,16762,cycle
+64,582c6fef5260,add_req,LLC miss -> LLC sends request to DRAM,LLC,16762,cycle
+64,582c6fef5260,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,17019,cycle
+64,582c6fef5260,respond,LLC sends response message to the requesting L1,LLC,17019,cycle
+64,582c6fef5260,updaDat,LLC updates its data array,LLC,17019,cycle
+64,582c6fef5260,wrCache,LLC: New data written to cache,LLC,17019,cycle
+64,582c6fef5260,respond,LLC sends response message to the requesting L1,LLC,17020,cycle
+64,582c6fef5260,add2q_u,L1 receives message from the bus,0,17024,cycle
+64,582c6fef5260,respond,L1 responds to core,0,17024,cycle
+64,582c6fef5260,updaDat,L1 attempts to update its data array,0,17024,cycle
+64,582c6fef5260,wrCache,L1: New data written to cache,0,17024,cycle
+65,7ffc159c9f48,add2q_l,L1: The message is added to the processing queue from the core,0,17026,cycle
+65,7ffc159c9f48,Miss?  ,L1: Was the request a miss?,0,1,boolean
+65,7ffc159c9f48,MSIredy,L1: Protocol determines message is now ready to be processed,0,17026,cycle
+65,7ffc159c9f48,msgProc,L1: message is taken from the L1's processing queue to be processed,0,17026,cycle
+65,7ffc159c9f48,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,17026,cycle
+65,7ffc159c9f48,add_req,L1: the core's controller processes the message -> miss -> sends req to LLC,0,17027,cycle
+65,7ffc159c9f48,add2q_u,L1 receives message from the bus,0,17028,cycle
+65,7ffc159c9f48,add2q_l,LLC: The request message is added to the LLC's processing queue,LLC,17028,cycle
+65,7ffc159c9f48,Miss?  ,LLC: Was the request a miss?,LLC,1,boolean
+65,7ffc159c9f48,LLCredy,LLC: Protocol determines message is now ready to be processed,LLC,17028,cycle
+65,7ffc159c9f48,msgProc,LLC: message is taken from the LLC's processing queue to be processed,LLC,17028,cycle
+65,7ffc159c9f48,add_req,LLC miss -> LLC sends request to DRAM,LLC,17028,cycle
+65,7ffc159c9f48,add2q_u,LLC: Refill message from RAM added to LLC's processing queue,LLC,17285,cycle
+65,7ffc159c9f48,respond,LLC sends response message to the requesting L1,LLC,17285,cycle
+65,7ffc159c9f48,updaDat,LLC updates its data array,LLC,17285,cycle
+65,7ffc159c9f48,wrCache,LLC: New data written to cache,LLC,17285,cycle
+65,7ffc159c9f48,respond,LLC sends response message to the requesting L1,LLC,17286,cycle
+65,7ffc159c9f48,add2q_u,L1 receives message from the bus,0,17290,cycle
+65,7ffc159c9f48,respond,L1 responds to core,0,17290,cycle
+65,7ffc159c9f48,updaDat,L1 attempts to update its data array,0,17290,cycle
+65,7ffc159c9f48,wrCache,L1: New data written to cache,0,17290,cycle

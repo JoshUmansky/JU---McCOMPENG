@@ -1,0 +1,6 @@
+C:\Users\umanskyj\Documents\4ds4\group12\project1_freertos_hello\drivers/fsl_clock.h:725:20:CLOCK_EnableClock	24	static
+C:\Users\umanskyj\Documents\4ds4\group12\project1_freertos_hello\drivers/fsl_port.h:374:20:PORT_SetPinMux	24	static
+../source/RC_Receiver_Component.c:20:6:setupRCReceiverComponent	24	static
+../source/RC_Receiver_Component.c:38:6:setupRCPins	8	static
+../source/RC_Receiver_Component.c:46:6:setupUART_RC	24	static
+../source/RC_Receiver_Component.c:59:6:rcTask	64	static

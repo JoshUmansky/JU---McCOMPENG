@@ -1,0 +1,1 @@
+/usr/bin/cc -g -rdynamic CMakeFiles/run.dir/call_arrival.c.o CMakeFiles/run.dir/call_departure.c.o CMakeFiles/run.dir/call_duration.c.o CMakeFiles/run.dir/cleanup.c.o CMakeFiles/run.dir/main.c.o CMakeFiles/run.dir/output.c.o CMakeFiles/run.dir/simlib.c.o -o run  -lm 

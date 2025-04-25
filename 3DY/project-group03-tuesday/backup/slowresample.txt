@@ -1,0 +1,59 @@
+//Up sample by 147, downsample by 800
+				std::cerr << "PATH MONO : MODE 2" << std::endl;
+	
+				int Audio_Us = 147;
+				int Audio_Ds = 800;
+
+				std::vector<float> y;
+				std::vector<float> block_data(BLOCK_SIZEM2);
+
+				float MonoFs = 240000;
+
+				float MonoFc = std::min((( MonoFs * ( (float) Audio_Us/Audio_Ds)) / 2 ), (float) MonoFs/2);
+
+				int num_taps = 101 * Audio_Us;
+
+				std::vector<float> h;
+				std::vector<float> audio_mono(BLOCK_SIZEM2);
+				std::vector<float> audio_state(num_taps, 0);
+				std::vector<short int> audio_data(1470);
+				std::vector<float> RFdemod_state = {0, 0};
+				std::vector<float> i_state, q_state;
+				int IF_Ds = 10;
+				
+				for (unsigned int block_id = 0; ; block_id++) {
+
+					readStdinBlockData(BLOCK_SIZEM2, block_id, block_data);
+					
+					if ((std::cin.rdstate()) != 0) {
+						std::cerr << "End of input stream reached" << std::endl;
+						exit(1);
+					}
+					std::cerr << "..." << std::endl;	
+					
+					RFFrontEnd(y, block_data, RFdemod_state, i_state, q_state, IF_Ds);
+										
+					// UPSAMPLING
+
+					std::vector<float> upsampled_y(y.size() * Audio_Us, 0.0);
+					for (unsigned int i = 0; i < y.size(); i++) {
+						upsampled_y[i * Audio_Us] = y[i];
+					}
+
+					audio_mono.clear();
+					audio_mono.resize(BLOCK_SIZEM2);
+					
+					// DOWNSAMPLING
+					
+					impulseResponseLPF(MonoFs*Audio_Us, MonoFc, num_taps, h, Audio_Us);
+
+					Conv_Ds(audio_mono, upsampled_y, h, audio_state, Audio_Ds);	
+
+					for(unsigned int k=0; k<audio_mono.size(); k++){
+						if(std::isnan(audio_mono[k])) audio_data[k]=0;						
+						else audio_data[k] = static_cast<short int>(audio_mono[k]*8192);
+					}
+					
+					fwrite(&audio_data[0], sizeof(short int), audio_data.size(), stdout);	
+				}
+			}

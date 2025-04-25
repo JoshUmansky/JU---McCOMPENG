@@ -1,0 +1,8 @@
+C:\Users\umanskyj\Documents\4ds4\group12\project1_freertos_hello\drivers/fsl_clock.h:725:20:CLOCK_EnableClock	24	static
+C:\Users\umanskyj\Documents\4ds4\group12\project1_freertos_hello\drivers/fsl_port.h:374:20:PORT_SetPinMux	24	static
+C:\Users\umanskyj\Documents\4ds4\group12\project1_freertos_hello\drivers/fsl_ftm.h:731:20:FTM_StartTimer	24	static
+C:\Users\umanskyj\Documents\4ds4\group12\project1_freertos_hello\drivers/fsl_ftm.h:1027:20:FTM_SetSoftwareTrigger	16	static
+../source/LED_Components.c:5:6:setupLEDComponent	24	static
+../source/LED_Components.c:33:6:setupLEDPins	8	static
+../source/LED_Components.c:47:6:setupLEDs	72	static
+../source/LED_Components.c:71:6:ledTask	40	static

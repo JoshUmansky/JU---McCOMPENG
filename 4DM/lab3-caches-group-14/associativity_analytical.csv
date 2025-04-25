@@ -1,0 +1,5 @@
+way,num_requests,num_hits,num_misses,hit_rate
+direct mapped cache,4096,0,4096,0
+4-ways,4096,3840,256,0.9375
+16-ways,4096,3840,256,0.9375
+128-ways,4096,3840,256,0.9375
